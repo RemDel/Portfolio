@@ -1,0 +1,13 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 300 11px/1.4 'Helvetiica Neue', 'sans-serif';
+  color: rgb(149, 100, 121);
+  background-color: rgb(54, 53, 85);
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
