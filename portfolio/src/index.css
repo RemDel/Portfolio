@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 300 11px/1.4 'Helvetiica Neue', 'sans-serif';
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: rgb(149, 100, 121);
   background-color: rgb(54, 53, 85);
   display: block;
