@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
+import WhoAmI from '../WhoAmI';
 import React, { useState, useEffect } from 'react'
 
 const Home = () => {
@@ -34,8 +35,11 @@ const Home = () => {
                 </h1>
                 <h2>Curently UI Developer at Quantic Dream</h2>
                 <Link to="/contact" className='flat-button' >CONTACT ME</Link>
+                
+                <div>
+                    <WhoAmI/>
+                </div>
             </div>
-
         </div>
     );
 }

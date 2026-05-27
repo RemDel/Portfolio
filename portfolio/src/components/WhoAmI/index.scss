@@ -1,0 +1,40 @@
+.desc {
+    margin-top: 325px;
+
+    .text-zone {
+        position: relative;
+        width: auto;
+        justify-content: center;
+        display:flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #ffffff;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        img {
+            height: 220px;
+            width: auto;
+            margin-right: 50px;
+            border: 1px solid #C5A187;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-weight: 300;
+            max-width: 800px;
+            text-align: left;
+        }
+    }
+}

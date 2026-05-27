@@ -13,6 +13,7 @@ import { faItchIo } from '@fortawesome/free-brands-svg-icons'
 function Sidebar() {
     return (
         <div>
+            <div className="nav-bar-left"/>
             <div className="nav-bar-right">
             <nav>
                 {}
@@ -20,15 +21,10 @@ function Sidebar() {
                     <FontAwesomeIcon icon={faHome} color="#C5A187"/>
                 </NavLink>
 
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-                    <FontAwesomeIcon icon={faUser} color="#C5A187"/>
-                </NavLink>
-
                 <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#C5A187"/>
                 </NavLink>
             </nav>
-
             <ul>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/remi-delauzun'>
@@ -42,12 +38,10 @@ function Sidebar() {
                 </li>
             </ul>
             </div>
-            <div className="nav-bar-left">
-
-            </div>
         </div>
     );
 }
+
 
 function Layout() {
     return (
@@ -58,3 +52,11 @@ function Layout() {
 }
 
 export default Layout
+
+/*
+
+<NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+                    <FontAwesomeIcon icon={faUser} color="#C5A187"/>
+                </NavLink>
+
+*/
