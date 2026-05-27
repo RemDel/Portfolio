@@ -17,11 +17,11 @@ function Sidebar() {
             <div className="nav-bar-right">
             <nav>
                 {}
-                <NavLink exact="true" activeclassname="active" to="Portfolio/home">
+                <NavLink exact="true" activeclassname="active" to="/home">
                     <FontAwesomeIcon icon={faHome} color="#C5A187"/>
                 </NavLink>
 
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="Portfolio/contact">
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#C5A187"/>
                 </NavLink>
             </nav>
@@ -52,11 +52,3 @@ function Layout() {
 }
 
 export default Layout
-
-/*
-
-<NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-                    <FontAwesomeIcon icon={faUser} color="#C5A187"/>
-                </NavLink>
-
-*/
