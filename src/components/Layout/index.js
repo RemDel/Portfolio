@@ -17,7 +17,7 @@ function Sidebar() {
             <div className="nav-bar-right">
             <nav>
                 {}
-                <NavLink exact="true" activeclassname="active" to="/">
+                <NavLink exact="true" activeclassname="active" to="/home">
                     <FontAwesomeIcon icon={faHome} color="#C5A187"/>
                 </NavLink>
 
