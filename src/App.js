@@ -12,20 +12,12 @@ function App() {
     <Layout />
 
     <Routes>
-      <Route path="/home" element={<Home />}> </Route>
-      <Route path="/about" element={<About />}> </Route>
-      <Route path="/contact" element={<Contact />}> </Route>
+      <Route path="Portfolio/home" element={<Home />}> </Route>
+      <Route path="Portfolio/about" element={<About />}> </Route>
+      <Route path="Portfolio/contact" element={<Contact />}> </Route>
     </Routes>
     </>
   );
 }
 
 export default App;
-
-/*
-<nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
-        <Link to="/contact">Contact</Link>
-    </nav>
-*/

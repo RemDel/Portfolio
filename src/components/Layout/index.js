@@ -17,11 +17,11 @@ function Sidebar() {
             <div className="nav-bar-right">
             <nav>
                 {}
-                <NavLink exact="true" activeclassname="active" to="/home">
+                <NavLink exact="true" activeclassname="active" to="Portfolio/home">
                     <FontAwesomeIcon icon={faHome} color="#C5A187"/>
                 </NavLink>
 
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="Portfolio/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#C5A187"/>
                 </NavLink>
             </nav>

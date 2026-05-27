@@ -34,7 +34,7 @@ const Home = () => {
 
                 </h1>
                 <h2>Curently UI Developer at Quantic Dream</h2>
-                <Link to="/contact" className='flat-button' >CONTACT ME</Link>
+                <Link to="Portfolio/contact" className='flat-button' >CONTACT ME</Link>
                 
                 <div>
                     <WhoAmI/>
