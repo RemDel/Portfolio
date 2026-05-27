@@ -1,0 +1,48 @@
+.home-page {
+
+    .text-zone {
+        position: absolute;
+        left: 100px; // 10%
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        max-height: 90%;
+    }
+    h1 {
+        color : #C5A187;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+    }
+
+    h2 {
+        color: #C5A187;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 0.2s backwards;
+    }
+
+    .flat-button {
+        color: #C5A187;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #C5A187;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 0.6s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            color: #ffff;
+            border-color: #ffff;
+        }
+    }
+}
