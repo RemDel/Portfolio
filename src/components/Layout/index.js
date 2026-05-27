@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faItchIo } from '@fortawesome/free-brands-svg-icons'
@@ -17,7 +16,7 @@ function Sidebar() {
             <div className="nav-bar-right">
             <nav>
                 {}
-                <NavLink exact="true" activeclassname="active" to="/home">
+                <NavLink exact="true" activeclassname="active" to="/Portfolio">
                     <FontAwesomeIcon icon={faHome} color="#C5A187"/>
                 </NavLink>
 

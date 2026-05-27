@@ -1,6 +1,5 @@
 import './index.scss'
 import profilePic from '../../assets/images/profilpic.jpg'
-import AnimatedLetters from '../AnimatedLetters';
 
 function WhoAmI() {
     return (
@@ -17,12 +16,3 @@ function WhoAmI() {
     );
 }
 export default WhoAmI
-//<img className="img" src={profilePic} alt="profile"></img>
-
-/*
-<h1>
-    <AnimatedLetters
-    strArray={['A','b','o','u','t']}
-    idx={15} />
-</h1>
-*/
