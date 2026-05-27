@@ -12,35 +12,39 @@ import { faItchIo } from '@fortawesome/free-brands-svg-icons'
 
 function Sidebar() {
     return (
-        <div className="nav-bar">
-        <nav>
-            {}
-            <NavLink exact="true" activeclassname="active" to="/">
-                <FontAwesomeIcon icon={faHome} color="#C5A187"/>
-            </NavLink>
+        <div>
+            <div className="nav-bar-right">
+            <nav>
+                {}
+                <NavLink exact="true" activeclassname="active" to="/">
+                    <FontAwesomeIcon icon={faHome} color="#C5A187"/>
+                </NavLink>
 
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-                <FontAwesomeIcon icon={faUser} color="#C5A187"/>
-            </NavLink>
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+                    <FontAwesomeIcon icon={faUser} color="#C5A187"/>
+                </NavLink>
 
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-                <FontAwesomeIcon icon={faEnvelope} color="#C5A187"/>
-            </NavLink>
-        </nav>
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                    <FontAwesomeIcon icon={faEnvelope} color="#C5A187"/>
+                </NavLink>
+            </nav>
 
-        <ul>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/remi-delauzun'>
-                <FontAwesomeIcon icon={faLinkedin} color="#C5A187"/>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://demi-lune-azur.itch.io/'>
-                <FontAwesomeIcon icon={faItchIo} color="#C5A187"/>
-                </a>
-            </li>
-        </ul>
-        
+            <ul>
+                <li>
+                    <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/remi-delauzun'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#C5A187"/>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel='noreferrer' href='https://demi-lune-azur.itch.io/'>
+                    <FontAwesomeIcon icon={faItchIo} color="#C5A187"/>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div className="nav-bar-left">
+
+            </div>
         </div>
     );
 }

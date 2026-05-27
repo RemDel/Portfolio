@@ -2,11 +2,11 @@
 
     .text-zone {
         position: absolute;
-        left: 150px; // 10%
+        text-align: center;//left: 150px; // 10%
         top: 150px;
         transform: translateY(-50%);
-        width: 80%;
-        max-height: 90%;
+        width: 100%;
+        max-height: 100%;
     }
     h1 {
         color : #C5A187;
@@ -19,6 +19,7 @@
     h2 {
         color: #C5A187;
         margin-top: 20px;
+        margin-bottom: 30px;
         font-weight: 400;
         font-size: 11px;
         font-family: sans-serif;
@@ -28,6 +29,7 @@
 
     .flat-button {
         color: #C5A187;
+        margin-top: 205px;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
@@ -35,8 +37,7 @@
         text-decoration: none;
         padding: 10px 18px;
         border: 1px solid #C5A187;
-        margin-top: 25px;
-        float: left;
+        float: center;
         animation: fadeIn 1s 0.6s backwards;
         white-space: nowrap;
 

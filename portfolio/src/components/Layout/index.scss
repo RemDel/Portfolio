@@ -1,11 +1,11 @@
-.nav-bar {
+.nav-bar-right {
     background: #2D2940;
     width: 90px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top : 0;
     z-index: 3;
-    min-height:  500px;
+    min-height: 500px;
 
     nav {
         display: block;
@@ -119,4 +119,15 @@
     transform-style: preserve-3d;
     animation: fadeIn 0.2s forwards;
     animation-delay: 0.1s;
+}
+
+.nav-bar-left {
+    background: #2D2940;
+    width: 90px;
+    height: 100%;
+    float: right;
+    display: block;
+    top : 0;
+    z-index: 3;
+    min-height: 5000px;
 }
