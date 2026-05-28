@@ -46,4 +46,28 @@
             border-color: #ffff;
         }
     }
+
+    
+}
+
+.button-project {
+    margin-top: 700px;
+
+    .flat-button-project {
+        color: #C5A187;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #C5A187;
+        animation: fadeIn 1s 0.6s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            color: #ffff;
+            border-color: #ffff;
+        }
+    }
 }
