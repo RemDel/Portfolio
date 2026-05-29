@@ -1,3 +1,5 @@
+@import "../../variables.module.scss";
+
 .project {
     position: absolute;
     text-align: center;
@@ -7,7 +9,7 @@
 }
 
 h1 {
-    color : #C5A187;
+    color : $secondary-color;
     font-size: 53px;
     margin: 0;
     font-family: 'Coolvetica';
@@ -31,10 +33,10 @@ h1 {
     }
 
 h4 {
-    color : #ffffff;
+    color : $primary-color;
     font-size: 18px;
     margin: 0;
-    font-family: 'Helvetica Neue';
+    font-family: sans-serif;
     font-weight: 400;
     max-width: 60%;
     text-align: left;

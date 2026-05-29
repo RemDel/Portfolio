@@ -1,3 +1,5 @@
+@import "../variables.module.scss";
+
 .desc {
     margin-top: 325px;
 
@@ -13,7 +15,7 @@
         h1 {
             font-size: 53px;
             font-family: 'Coolvetica';
-            color: #ffffff;
+            color: $primary-color;
             font-weight: 400;
             position: relative;
             margin-bottom: 40px;
@@ -23,14 +25,14 @@
             height: 220px;
             width: auto;
             margin-right: 50px;
-            border: 1px solid #C5A187;
+            border: 1px solid $secondary-color;
             padding: 10px;
             border-radius: 5px;
         }
 
-        p {
+        h4 {
             font-size: 18px;
-            color: #ffffff;
+            color: $primary-color;
             font-family: sans-serif;
             font-weight: 300;
             max-width: 800px;

@@ -7,6 +7,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faItchIo } from '@fortawesome/free-brands-svg-icons'
+import variables from '../variables.module.scss';
 
 
 function Sidebar() {
@@ -17,22 +18,22 @@ function Sidebar() {
             <nav>
                 {}
                 <NavLink exact="true" activeclassname="active" to="/Portfolio">
-                    <FontAwesomeIcon icon={faHome} color="#C5A187"/>
+                    <FontAwesomeIcon icon={faHome} color={variables.unhovercolor}/>
                 </NavLink>
 
                 <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} color="#C5A187"/>
+                    <FontAwesomeIcon icon={faEnvelope} color={variables.unhovercolor}/>
                 </NavLink>
             </nav>
             <ul>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/remi-delauzun'>
-                    <FontAwesomeIcon icon={faLinkedin} color="#C5A187"/>
+                    <FontAwesomeIcon icon={faLinkedin} color={variables.unhovercolor}/>
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://demi-lune-azur.itch.io/'>
-                    <FontAwesomeIcon icon={faItchIo} color="#C5A187"/>
+                    <FontAwesomeIcon icon={faItchIo} color={variables.unhovercolor}/>
                     </a>
                 </li>
             </ul>

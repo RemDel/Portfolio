@@ -1,0 +1,41 @@
+$background-color: #f0f6f0;
+$border-color: #222323;
+
+$hover-color: #f0f6f0;
+$unhover-color: #717188;
+
+$bhover-color: #000000;
+$bunhover-color: #717188;
+
+$primary-color: #000000;
+$secondary-color: #717188;
+$tertiary-color: #C58787;
+$quaternary-color: #956479;
+$test-color: #ff00ff;
+
+:export {
+    backgroundcolor: $background-color;
+    bordercolor: $border-color;
+    
+    hovercolor: $hover-color;
+    unhovercolor: $unhover-color;
+    
+    bhovercolor: $hover-color;
+    bunhovercolor: $unhover-color;
+
+    primarycolor: $primary-color;
+    secondarycolor: $secondary-color;
+    tertiarycolor: $tertiary-color;
+    quaternarycolor: $quaternary-color;
+    testcolor: $test-color;
+}
+
+/*
+$background-color: #363555;
+$border-color: #2D2940;
+$primary-color: #ffffff;
+$secondary-color: #C5A187;
+$tertiary-color: #C58787;
+$quaternary-color: #956479;
+$test-color: #ff00ff;
+*/
