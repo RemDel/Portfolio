@@ -29,6 +29,11 @@
         animation: fadeIn 1s 0.2s backwards;
     }
 
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
     .flat-button {
         color: $bunhover-color;
         margin-top: 205px;
@@ -52,7 +57,7 @@
 }
 
 .button-project {
-    margin-top: 600px;
+    margin-top: 700px;
     width: 100%;
     height: auto;
     //display: flex;
@@ -77,6 +82,7 @@
         border: 1px solid $bunhover-color;
         animation: fadeIn 1s 0.6s backwards;
         white-space: nowrap;
+        margin: 20px;
 
         &:hover {
             color: $background-color;

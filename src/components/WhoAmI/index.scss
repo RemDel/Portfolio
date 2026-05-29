@@ -11,6 +11,7 @@
         flex-direction: row;
         align-self: center;
         align-items: center;
+        //border: 1px solid $test-color;
 
         h1 {
             font-size: 53px;
@@ -30,12 +31,43 @@
             border-radius: 5px;
         }
 
-        h4 {
-            font-size: 18px;
+        .text-container {
+            //border: 1px solid $test-color;
+            width: 60%;
+        }
+
+        p {
+            font-size: 14px;
             color: $primary-color;
             font-family: sans-serif;
             font-weight: 300;
-            max-width: 800px;
+            text-align: left;
+        }
+
+        ul {
+            line-height: 3px;
+            color: $primary-color;
+        }
+
+        b {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $tertiary-color;
+            font-family: sans-serif;
+            text-align: left;
+        }
+
+        h3 {
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: $primary-color;
+            font-family: sans-serif;
             text-align: left;
         }
     }

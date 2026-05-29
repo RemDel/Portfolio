@@ -37,8 +37,7 @@ const Home = () => {
                         idx={15}/>
 
                 </h1>
-                <h2>Curently UI Developer at Quantic Dream</h2>
-                <Link to="/contact" className='flat-button' >CONTACT ME</Link>
+                <h2>Curently UI Developer at <a target="_blank" rel='noreferrer' href='https://www.quanticdream.com/'>Quantic Dream</a></h2>
                 
                 <div>
                     <WhoAmI/>
@@ -46,15 +45,9 @@ const Home = () => {
 
                 <div className="container button-project">
                     <div>
-                        <div className="button-container">
-                            <Link to={"/project/quanticdream"} className='flat-button-project' >Quantic Dream</Link>
-                        </div>
-                        <div className="button-container">
-                            <Link to="/project/aviationcivile" className='flat-button-project' >Aviation Civile</Link>
-                        </div>
-                        <div className="button-container">
-                            <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
-                        </div>
+                        <Link to="/project/quanticdream" className='flat-button-project' >Quantic Dream</Link>
+                        <Link to="/project/aviationcivile" className='flat-button-project' >Aviation Civile</Link>
+                        <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
                     </div>
                 </div>
             </div>
@@ -71,6 +64,23 @@ export default Home
     <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
 </div>
 
+
+
+
+                <Link to="/contact" className='flat-button' >CONTACT ME</Link>
+                
+
+
+
+<div className="button-container">
+    <Link to={"/project/quanticdream"} className='flat-button-project' >Quantic Dream</Link>
+</div>
+<div className="button-container">
+    <Link to="/project/aviationcivile" className='flat-button-project' >Aviation Civile</Link>
+</div>
+<div className="button-container">
+    <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
+</div>
 */
 
 /*
