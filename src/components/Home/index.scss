@@ -52,9 +52,19 @@
 }
 
 .button-project {
-    margin-top: 650px;
+    margin-top: 600px;
     width: 100%;
     height: auto;
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid $test-color;
+
+    .button-container{
+        //border: 1px solid $test-color;
+        padding: 15px;
+        //width: 100%;
+    }
 
     .flat-button-project {
         color: $bunhover-color;
