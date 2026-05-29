@@ -1,20 +1,24 @@
-import { Link } from 'react-router-dom'
 import './index.scss';
+
+import React, { useState, useEffect } from 'react'
+//import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom'
+
 import AnimatedLetters from '../AnimatedLetters';
 import WhoAmI from '../WhoAmI';
-import React, { useState, useEffect } from 'react'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['I','\'','m',' ','R','é','m','i',' ','D','e','l','a','u','z','u','n'];
     const jobArray = ['S','o','f','t','w','a','r','e',' ','E','n','g','i','n','e','e','r']
+    //const navigate = useNavigate();
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 1000)
     }, [])
-
+    
     return (
         <div className="container home-page">
             <div className="text-zone">
@@ -43,10 +47,10 @@ const Home = () => {
                 <div className="container button-project">
                     <div>
                         <div className="button-container">
-                            <Link to="/project/quanticdream" className='flat-button-project' >Quantic Dream</Link>
+                            <Link to={"/project/quanticdream"} className='flat-button-project' >Quantic Dream</Link>
                         </div>
                         <div className="button-container">
-                            <Link to="/project/quanticdream" className='flat-button-project' >Aviation Civile</Link>
+                            <Link to="/project/aviationcivile" className='flat-button-project' >Aviation Civile</Link>
                         </div>
                         <div className="button-container">
                             <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
@@ -66,5 +70,16 @@ export default Home
     <Link to="/project/aviationcivile" className='flat-button-project' >Aviation Civile</Link>
     <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
 </div>
+
+*/
+
+/*
+<p
+      onClick={() => {
+        navigate("/viewtwo", { state: { targetId: "section2" } });
+      }}
+    >
+      Link to section two, in view two
+    </p>
 
 */
