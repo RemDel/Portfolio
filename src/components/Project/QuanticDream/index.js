@@ -6,7 +6,7 @@ import Video from '../../Video';
 
 const QuanticDream = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['Q','u','a','n','t','i','c',' ','D','r','e','a','m'];
+    const nameArray = ['S','p','e','l','l','c','a','s','t','e','r','s',' ','C','h','r','o','n','i','c','l','e','s'];
     
     const { state } = useLocation();
     const { targetId } = state || {};
@@ -35,9 +35,30 @@ const QuanticDream = () => {
             <br />
         </h1>
 
-        <div className='video'>
-            <Video/>
+        <div className="container-video-text">
+            <div className='video-container'>
+                <Video />
+            </div>
+            <div className='text-container'>
+                <p><b>Released:</b> Cancelled <em>(6 months Live on Steam)</em></p>
+                <p><b>Theme:</b> Competitive MOBA</p>
+                <p><b>Studio: </b>
+                    <a target="_blank" rel='noreferrer' href='https://www.quanticdream.com/'>Quantic Dream</a>
+                    <em> (150 collaborators)</em></p>
+                <p><b>Platforms:</b> PC</p>
+                <p><b>Time spent on project:</b> ~1.5 years</p>
+                <p><b>Engine and tools:</b> In-house Engine, C++</p>
+            </div>
         </div>
+    </div>
+    );
+}
+
+export default QuanticDream
+
+
+/*
+
 
         <div className='description'>
             <h4>
@@ -95,7 +116,6 @@ const QuanticDream = () => {
 
             </h4>
         </div>
-
 
         <section id='section2'>
             <div className='description'>
@@ -117,8 +137,5 @@ const QuanticDream = () => {
                 </h4>
             </div>
         </section>
-    </div>
-    );
-}
 
-export default QuanticDream
+*/

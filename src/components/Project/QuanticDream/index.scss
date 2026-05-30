@@ -8,6 +8,28 @@
     max-height: 100%;
 }
 
+.container-video-text {
+    position: relative;
+    margin-top: 50px;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    //border: 1px solid $test-color;
+}
+
+.description {
+    top: 400px;
+    position: relative;
+    width: auto;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
 h1 {
     color : $secondary-color;
     font-size: 53px;
@@ -15,22 +37,6 @@ h1 {
     font-family: 'Coolvetica';
     font-weight: 400;
 }
-
-
-.video {
-    text-align: center;
-    transform: translateY(20px);
-}
-
-.description
-    {
-        top: 400px;
-        position: relative;
-        width: auto;
-        justify-content: center;
-        display:flex;
-        align-items: center;
-    }
 
 h4 {
     color : $primary-color;
@@ -40,4 +46,36 @@ h4 {
     font-weight: 400;
     max-width: 60%;
     text-align: left;
+}
+
+.text-container {
+    width: 25%;
+}
+
+.video-container {
+    width: 560px;
+    height: 304px;
+    //border: 1px solid $test-color;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: $primary-color;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+b {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $tertiary-color;
+    font-family: sans-serif;
 }
