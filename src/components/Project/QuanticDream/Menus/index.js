@@ -6,7 +6,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
-import FlowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
+//import FlowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
+import CarouselData from "../Carousel/carouselData.json";
+import Carousel from '../Carousel';
 
 function CustomTabPanel(props) {
   const { children, value, index } = props;
@@ -105,6 +107,11 @@ const Menus = () => {
                     </ul>
                 </div>
             </div>
+
+            <div className='center'>
+                <Carousel data={CarouselData.slides} />
+            </div>
+
             <div className='center'>
                 <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
             </div>

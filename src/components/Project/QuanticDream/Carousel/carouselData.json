@@ -1,0 +1,32 @@
+{
+    "slides": [
+        {
+            "src": "https://picsum.photos/seed/picsum/200/300",
+            "alt": "CurrencyPage"
+        },
+        {
+            "src": "./src/assets/images/carouselImg/StoreConfirmationPopUp.png",
+            "alt": "StoreConfirmationPopUp"
+        },
+        {
+            "src": "src/assets/images/carouselImg/StoreCongratsPage01.png",
+            "alt": "StoreCongratsPage01"
+        },
+        {
+            "src": "src/assets/images/carouselImg/StoreCongratsPage02.png",
+            "alt": "StoreCongratsPage02"
+        },
+        {
+            "src": "src/assets/images/carouselImg/StoreHomePage.png",
+            "alt": "StoreHomePage"
+        },
+        {
+            "src": "src/assets/images/carouselImg/StoreValidationPage01.png",
+            "alt": "StoreValidationPage01"
+        },
+        {
+            "src": "src/assets/images/carouselImg/StoreValidationPage02.png",
+            "alt": "StoreValidationPage02"
+        }
+    ]
+}
