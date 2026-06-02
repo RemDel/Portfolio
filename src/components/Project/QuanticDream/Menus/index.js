@@ -7,7 +7,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
 //import FlowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
-import CarouselData from "../Carousel/carouselData.json";
+import CarouselData from "../Carousel/carouselData";
 import Carousel from '../Carousel';
 
 function CustomTabPanel(props) {
@@ -49,10 +49,13 @@ const Menus = () => {
             <Divider className='center'>
                 <h2>MENUS</h2>
             </Divider>
-
-            <div className='center'>    
-                <h2>1. Shop</h2>
+            
+            <div className='center'>
+                <Divider className='center small-div'>
+                    <h2>SHOP</h2>
+                </Divider>
             </div>
+
             <div className="container-video-text">
                 <div>
                     <div className='center'>  
@@ -65,7 +68,7 @@ const Menus = () => {
                     </div>
                     <div className='center'>  
                         <CustomTabPanel value={value} index={0}>
-                        <div className="ratio ratio-16x9">
+                        <div className="video-border ratio ratio-16x9">
                             <iframe 
                                 width="560" 
                                 height="304" 
@@ -76,7 +79,7 @@ const Menus = () => {
                         </div>
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={1}>
-                        <div className="ratio ratio-16x9">
+                        <div className="video-border ratio ratio-16x9">
                             <iframe 
                                 width="560" 
                                 height="304" 
@@ -107,26 +110,30 @@ const Menus = () => {
                     </ul>
                 </div>
             </div>
-
-            <div className='center'>
-                <Carousel data={CarouselData.slides} />
-            </div>
-
+            
             <div className='center'>
                 <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
             </div>
 
+            <div className='center'>
+                <Carousel data={CarouselData} />
+            </div>
 
 
 
 
-            <Divider className='center'>
-                <h2>QUESTS</h2>
-            </Divider>
 
-            <Divider className='center'>
-                <h2>CUSTOMIZATIONS</h2>
-            </Divider>
+            <div className='center'>
+                <Divider className='center small-div'>
+                    <h2>QUESTS</h2>
+                </Divider>
+            </div>
+
+            <div className='center'>
+                <Divider className='center small-div'>
+                    <h2>CUSTOMIZATIONS</h2>
+                </Divider>
+            </div>
 
             <div className='container-horizontal'>
 

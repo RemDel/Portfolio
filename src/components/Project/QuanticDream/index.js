@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../../AnimatedLetters';
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router';
-import Divider from '@mui/material/Divider';
+//import Divider from '@mui/material/Divider';
 import Video from '../../Video';
 import Menus from './Menus';
 import HUD from './HUD';
@@ -62,7 +62,7 @@ const QuanticDream = () => {
 
         <div className='list-contribution'>
             
-            <Divider><h2>Summary of Contributions</h2></Divider>
+            <h2>Summary of Contributions</h2>
             <div className="container-list-button">
                 <p className='flat-button-project' onClick={() => { menuRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>MENUS</p>
                 <p className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>

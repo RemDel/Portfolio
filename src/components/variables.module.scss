@@ -13,6 +13,7 @@ $tertiary-color: #7b2baa;
 $quaternary-color: #956479;
 $test-color: #ff00ff;
 $test-color-1: #00ff22;
+$shadow-color: #666;
 
 :export {
     backgroundcolor: $background-color;
@@ -28,8 +29,8 @@ $test-color-1: #00ff22;
     secondarycolor: $secondary-color;
     tertiarycolor: $tertiary-color;
     quaternarycolor: $quaternary-color;
+    
     testcolor: $test-color;
-    testcolor1: $test-color-1;
 }
 
 // npm install @mui/material @emotion/react @emotion/styled

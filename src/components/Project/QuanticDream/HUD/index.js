@@ -1,21 +1,28 @@
-import '../Menus/index.scss'
+import '../Menus/index.scss';
+import Divider from '@mui/material/Divider';
 
 const HUD = () => (
     <div className='container-all'>
+        <Divider className='center'>
+            <h2>HUD</h2>
+        </Divider>
+        
         <div className='center'>
-            <p>HUD</p>
+            <Divider className='center small-div'>
+                <h2>MINIMAP</h2>
+            </Divider>
         </div>
 
         <div className='center'>
-            <p>1. Minimap</p>
+            <Divider className='center small-div'>
+                <h2>LEVEL UP</h2>
+            </Divider>
         </div>
 
         <div className='center'>
-            <p>2. LevelUp</p>
-        </div>
-
-        <div className='center'>
-            <p>3. Divers (spectate, tuto subtitles, pop up...)</p>
+            <Divider className='center small-div'>
+                <h2>DIVERS</h2>
+            </Divider>
         </div>
 
         <div className='container-horizontal'>
