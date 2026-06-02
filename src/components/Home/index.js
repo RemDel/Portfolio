@@ -46,8 +46,8 @@ const Home = () => {
                 <div className="container button-project">
                     <div>
                         <Link to="/project/quanticdream" className='flat-button-project' >Quantic Dream</Link>
-                        <Link to="/project/aviationcivile" className='flat-button-project' >Aviation Civile</Link>
-                        <Link to="/project/safranaircraftengine" className='flat-button-project' >Safran Aircraft Engine</Link>
+                        <Link to="/project/quanticdream" className='flat-button-project' >Aviation Civile</Link>
+                        <Link to="/project/quanticdream" className='flat-button-project' >Safran Aircraft Engine</Link>
                     </div>
                 </div>
             </div>

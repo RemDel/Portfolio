@@ -2,9 +2,11 @@ import './index.scss'
 import AnimatedLetters from '../../AnimatedLetters';
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router';
+import Divider from '@mui/material/Divider';
 import Video from '../../Video';
 import Menus from './Menus';
 import HUD from './HUD';
+import Performances from './Performances';
 
 const QuanticDream = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -13,7 +15,9 @@ const QuanticDream = () => {
     const { state } = useLocation();
     const { targetId } = state || {};
 
-    const gamesRef = React.createRef();
+    const menuRef = React.createRef();
+    const hudRef = React.createRef();
+    const perfRef = React.createRef();
 
     useEffect(() => {
         const el = document.getElementById(targetId);
@@ -30,7 +34,7 @@ const QuanticDream = () => {
     }, [])
 
     return (
-    <div className='project'>
+    <div className='project anim'>
         <h1>
             <AnimatedLetters    
                 letterClass={letterClass}
@@ -54,78 +58,24 @@ const QuanticDream = () => {
                 <p><b>Engine and tools:</b> In-house Engine, C++</p>
             </div>
         </div>
+
+
         <div className='list-contribution'>
-            <h2>Summary of Contributions</h2>
+            
+            <Divider><h2>Summary of Contributions</h2></Divider>
             <div className="container-list-button">
-                <p className='flat-button-project' onClick={() => { gamesRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>MENUS</p>
-                <p className='flat-button-project' onClick={() => { gamesRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>
-                <p className='flat-button-project' onClick={() => { gamesRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>PERFORMANCES</p>
+                <p className='flat-button-project' onClick={() => { menuRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>MENUS</p>
+                <p className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>
+                <p className='flat-button-project' onClick={() => { perfRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>PERFORMANCES</p>
             </div>
         </div>
 
-        <div>
-            <Menus />
-            <HUD />
+
+        <div className='detail-contribution'>
+            <div ref={menuRef}> <Menus /> </div>
+            <div ref={hudRef}> <HUD /> </div>
+            <div ref={perfRef}> <Performances /> </div>
         </div>
-
-        <div className='description'>
-            <h4>
-                Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                <br /><br />
-                The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                <br /><br />
-                Key contributions:<br />
-                * Storefront UI architecture<br />
-                * Steam overlay purchase integration<br />
-                * Virtual currency workflows<br />
-                * Live content support<br />
-                * Scalable shop category structure<br />
-                <br />
-                Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-            </h4>
-        </div>
-
-        <div className='description'>
-            <h4>
-                Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                <br /><br />
-                The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                <br /><br />
-                Key contributions:<br />
-                * Storefront UI architecture<br />
-                * Steam overlay purchase integration<br />
-                * Virtual currency workflows<br />
-                * Live content support<br />
-                * Scalable shop category structure<br />
-                <br />
-                Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-            </h4>
-        </div>
-
-        <section ref={gamesRef} id='section2'>
-            <div className='description'>
-                <h4>
-                    Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                    The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                    <br /><br />
-                    The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                    <br /><br />
-                    Key contributions:<br />
-                    * Storefront UI architecture<br />
-                    * Steam overlay purchase integration<br />
-                    * Virtual currency workflows<br />
-                    * Live content support<br />
-                    * Scalable shop category structure<br />
-                    <br />
-                    Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-                </h4>
-            </div>
-        </section>
     </div>
     );
 }

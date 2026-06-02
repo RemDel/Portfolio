@@ -1,21 +1,9 @@
 import '../Menus/index.scss'
 
-const HUD = () => (
+const Performances = () => (
     <div className='container-all'>
         <div className='center'>
-            <p>HUD</p>
-        </div>
-
-        <div className='center'>
-            <p>1. Minimap</p>
-        </div>
-
-        <div className='center'>
-            <p>2. LevelUp</p>
-        </div>
-
-        <div className='center'>
-            <p>3. Divers (spectate, tuto subtitles, pop up...)</p>
+            <p>Performances</p>
         </div>
 
         <div className='container-horizontal'>
@@ -38,4 +26,4 @@ const HUD = () => (
         </div>
     </div>
 )
-export default HUD
+export default Performances
