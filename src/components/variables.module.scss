@@ -12,6 +12,7 @@ $secondary-color: #717188;
 $tertiary-color: #7b2baa;
 $quaternary-color: #956479;
 $test-color: #ff00ff;
+$test-color-1: #00ff22;
 
 :export {
     backgroundcolor: $background-color;
@@ -28,6 +29,7 @@ $test-color: #ff00ff;
     tertiarycolor: $tertiary-color;
     quaternarycolor: $quaternary-color;
     testcolor: $test-color;
+    testcolor1: $test-color-1;
 }
 
 /*
