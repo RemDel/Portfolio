@@ -43,7 +43,7 @@ const QuanticDream = () => {
             <br />
         </h1>
 
-        <div className="container-video-text">
+        <div className="container-video-text margin-qd">
             <div className='video-container'>
                 <Video />
             </div>

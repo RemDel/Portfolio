@@ -20,6 +20,11 @@
     //border: 1px solid $test-color;
 }
 
+.spacing-item {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
 .tabs {
     cursor: pointer;
     padding: 10px;
@@ -27,4 +32,12 @@
     border: 1px solid #ddd;
     border-bottom: none;
     background-color: #f1f1f1;
+}
+
+h4 {
+    color : $primary-color;
+    font-size: 16px;
+    margin-top: 4px;
+    font-family: sans-serif;
+    text-align: left;
 }

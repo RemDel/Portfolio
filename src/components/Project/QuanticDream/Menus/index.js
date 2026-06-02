@@ -1,9 +1,12 @@
 import './index.scss'
+import Divider from '@mui/material/Divider';
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+
+import FlowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
 
 function CustomTabPanel(props) {
   const { children, value, index } = props;
@@ -41,12 +44,12 @@ const Menus = () => {
 
     return (
         <div className='container-all'>
-            <div className='center'>
-                <p>Menus</p>
-            </div>
+            <Divider className='center'>
+                <h2>MENUS</h2>
+            </Divider>
 
             <div className='center'>    
-                <p>1. Shop</p>
+                <h2>1. Shop</h2>
             </div>
             <div className="container-video-text">
                 <div>
@@ -55,7 +58,6 @@ const Menus = () => {
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                             <Tab label="Polished" {...a11yProps(0)} />
                             <Tab label="Prototype" {...a11yProps(1)} />
-                            <Tab label="Mockup" {...a11yProps(2)} />
                         </Tabs>
                         </Box>
                     </div>
@@ -76,17 +78,6 @@ const Menus = () => {
                             <iframe 
                                 width="560" 
                                 height="304" 
-                                src="https://www.youtube.com/embed/d0eU81Nbhv8" title="Trailer Video" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                        </CustomTabPanel>
-                        <CustomTabPanel value={value} index={2}>
-                        <div className="ratio ratio-16x9">
-                            <iframe 
-                                width="560" 
-                                height="304" 
                                 src="https://www.youtube.com/embed/qVriOYI6P_g" title="Trailer Video" frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen>
@@ -96,29 +87,39 @@ const Menus = () => {
                     </div>
                 </div>
 
-                <div className="text-container">
-                    <p>Versatile <b>software engineer</b> with experience in both the <b>video game</b> and <b>aerospace</b> industries. I worked for one year at 
-                    
-                    <em> <a target="_blank" rel='noreferrer' href='https://www.quanticdream.com/'>Quantic Dream</a> </em>
+                <div className="text-container spacing-item">
+                    <p>
+                        Developed and integrated the <b>in-game storefront UI</b>, supporting cosmetic purchases, virtual currency transactions, and <b>LiveOps content delivery</b>. 
+                        Collaborated closely with <em>UX/UI designers</em>, <em>Online Services</em>, and <em>Gameplay Programming</em> teams to ensure accurate display of transaction and inventory data within the client.
+                    </p>
+                    <p>    
+                        Implemented support for purchases using premium currency (Elder Gold) and acquiring this currency through the Steam Overlay <b>payment flow</b>. 
+                        Built the storefront with a <b>modular</b> and <b>data-driven architecture</b>, allowing new catalog content, promotions, and monetization features to be deployed efficiently without UI refactoring.
+                    </p>
 
-                    as a <b>UI Developer</b>, contributing to the multiplayer MOBA project 
-                    
-                    <em> <a target="_blank" rel='noreferrer' href='https://www.spellcasterschronicles.com/'>Spellcasters Chronicles</a>. </em>
-                    
-                    My work focused on developing <b>scalable, high-performance user interfaces</b>, including in-game shop systems with <b>Steam</b> transaction integration, 2D and 3D customization systems, daily quest features, HUD implementation, and UI performance optimization.</p>
-
-                    <p>I also gained professional experience in the aerospace sector through civilian projects for the DGAC (Directorate General of Civil Aviation), developing applications used in air traffic control towers (<em>Elvira</em> and <em>Redevance</em>), as well as military projects for Safran Aircraft Engines involving Rafale aircraft engine systems.</p>
-
-                    <p>With a background in <b>robotics engineering</b>, I specialize in <b>C/C++ development</b> and real-time systems, combining strong technical expertise with a focus on intuitive and efficient UI/UX design.</p>
+                    <ul>
+                    <li><h4>Storefront UI architecture</h4></li>
+                    <li><h4>Steam overlay purchase integration</h4></li>
+                    <li><h4>Live content support</h4></li>
+                    <li><h4>Scalable shop category structure</h4></li>
+                    </ul>
                 </div>
             </div>
             <div className='center'>
-                <p>2. Quests</p>
+                <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
             </div>
 
-            <div className='center'>
-                <p>3. Customizations</p>
-            </div>
+
+
+
+
+            <Divider className='center'>
+                <h2>QUESTS</h2>
+            </Divider>
+
+            <Divider className='center'>
+                <h2>CUSTOMIZATIONS</h2>
+            </Divider>
 
             <div className='container-horizontal'>
 
