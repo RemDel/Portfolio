@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 
 //import flowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
 import CarouselData from "../Carousel/carouselData";
+import MockupShopData from "../Carousel/mockupShopData";
 import Carousel from '../Carousel';
 
 
@@ -57,225 +58,256 @@ const Menus = () => {
             </Divider>
             
 
-            {/* ------------------------------------------------------------------------------------------------ */}
-            <div className='center top-separator'>
-                <Divider className='center small-div'>
-                    <h3>SHOP</h3>
-                </Divider>
-            </div>
+            {/* SHOP ------------------------------------------------------------------------------------------------ */}
+            <div>
+                <div className='center top-separator'>
+                    <Divider className='center small-div'>
+                        <h3>SHOP</h3>
+                    </Divider>
+                </div>
 
-            <div className='center'>
-                <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
-            </div>
+                <div className='center'>
+                    <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
+                </div>
 
-            <div className="container-video-text gap">
-                <div>
-                    <div className='center'>  
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                        <Tabs value={value} textColor="secondary" indicatorColor="secondary" onChange={handleChange}>
-                            <Tab label="Polished" {...a11yProps(0)}/>
-                            <Tab label="Prototype" {...a11yProps(1)}/>
-                        </Tabs>
-                        </Box>
+                <div className="container-video-text gap">
+                    <div>
+                        <div className='center'>  
+                            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                            <Tabs value={value} textColor="secondary" indicatorColor="secondary" onChange={handleChange}>
+                                <Tab label="Polished" {...a11yProps(0)}/>
+                                <Tab label="Prototype" {...a11yProps(1)}/>
+                            </Tabs>
+                            </Box>
+                        </div>
+                        <div className='center'>  
+                            <CustomTabPanel value={value} index={0}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src="https://www.youtube.com/embed/Qkq-awLhALU" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={value} index={1}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src="https://www.youtube.com/embed/qVriOYI6P_g" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                        </div>
                     </div>
-                    <div className='center'>  
-                        <CustomTabPanel value={value} index={0}>
-                        <div className="video-border ratio ratio-16x9">
-                            <iframe 
-                                width="560" 
-                                height="304" 
-                                src="https://www.youtube.com/embed/Qkq-awLhALU" title="Trailer Video" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
+
+                    <div className="text-container">
+                        <p>
+                            Developed and integrated the <b>in-game storefront UI</b>, supporting cosmetic purchases, virtual currency transactions, and <b>LiveOps content delivery</b>. 
+                            Collaborated closely with <em>UX/UI designers</em>, <em>Online Services</em>, and <em>Gameplay Programming</em> teams to ensure accurate display of transaction and inventory data within the client.
+                        </p>
+                        <p>    
+                            Implemented support for purchases using premium currency (Elder Gold) and acquiring this currency through the Steam Overlay <b>payment flow</b>. 
+                            Built the storefront with a <b>modular</b> and <b>data-driven architecture</b>, allowing new catalog content, promotions, and monetization features to be deployed efficiently without UI refactoring.
+                        </p>
+
+                        <ul>
+                        <li><h4>Storefront UI architecture</h4></li>
+                        <li><h4>LiveOps integration</h4></li>
+                        <li><h4>Steam overlay purchase integration</h4></li>
+                        <li><h4>Scalable shop category structure</h4></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div className='container-horizontal gap top-separator-small'>
+                    <div className='carousel-display'>
+                        <div className='center top-separator-smallest'>
+                            <div className='center'>
+                                <Carousel data={MockupShopData} />
+                            </div>
                         </div>
-                        </CustomTabPanel>
-                        <CustomTabPanel value={value} index={1}>
-                        <div className="video-border ratio ratio-16x9">
-                            <iframe 
-                                width="560" 
-                                height="304" 
-                                src="https://www.youtube.com/embed/qVriOYI6P_g" title="Trailer Video" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
+                    </div>
+                    <div>
+                        <img src={require('../../../../assets/images/shop/StoreHomePageMockup.png')} alt="loading..." className='png-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Page layout showing the main elements</em></h5>
                         </div>
-                        </CustomTabPanel>
+                    </div>
+                    <div className='carousel-display'>
+                        <div className='center top-separator-smallest'>
+                            <div className='center'>
+                                <Carousel data={CarouselData} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* QUESTS ------------------------------------------------------------------------------------------------ */}
+            <div>
+                <div className='center top-separator'>
+                    <Divider className='center small-div'>
+                        <h3>QUESTS</h3>
+                    </Divider>
+                </div>
+
+                <div className='center'>
+                    <p><em>Reinforced long-term player retention through clear progression and reward visibility.</em></p>
+                </div>
+
+                <div className='container-video-text gap'>
+                    <div>
+                        <div className='center'>  
+                            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                            <Tabs value={qvalue} textColor="secondary" indicatorColor="secondary" onChange={qhandleChange} aria-label="basic tabs example">
+                                <Tab label="Polished" {...a11yProps(0)} />
+                                <Tab label="Component Parameters" {...a11yProps(1)} />
+                                <Tab label="Particules Code" {...a11yProps(2)} />
+                            </Tabs>
+                            </Box>
+                        </div>
+                        <div className='center'>  
+                            <CustomTabPanel value={qvalue} index={0}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304"
+                                    src="https://www.youtube.com/embed/_uS4u4RN9Ho" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={qvalue} index={1}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src={require('../../../../assets/images/quests/buildoDetails.png')} title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={qvalue} index={2}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src={require('../../../../assets/images/quests/codeAnalysed.png')} title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                        </div>
+                    </div>
+
+                    <div className="text-container">
+                        <p>
+                            Implemented a recurring quest system supporting <b>daily and weekly objectives</b> through a <b>LiveOps-driven</b> configuration pipeline.
+                        </p>
+                        <p>
+                            The system supported <b>multiple quest pools</b> with assignment logic, so that both easy and difficult daily quests could be provided.
+                            Reward feedback animations were fully generated in code to minimize performance overhead and dynamically adapt particle quantities to reward values.
+                        </p>
+                        <p>
+                            <em>While this approach improved runtime efficiency, it also revealed limitations in animation flexibility and iteration speed, highlighting future opportunities for tooling improvements.</em>
+                        </p>
+                    
+                        <ul>
+                        <li><h4>Progress tracking UI</h4></li>
+                        <li><h4>LiveOps integration</h4></li>
+                        <li><h4>Runtime-generated reward VFX</h4></li>
+                        <li><h4>Performance-conscious animation systems</h4></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div className="text-container">
-                    <p>
-                        Developed and integrated the <b>in-game storefront UI</b>, supporting cosmetic purchases, virtual currency transactions, and <b>LiveOps content delivery</b>. 
-                        Collaborated closely with <em>UX/UI designers</em>, <em>Online Services</em>, and <em>Gameplay Programming</em> teams to ensure accurate display of transaction and inventory data within the client.
-                    </p>
-                    <p>    
-                        Implemented support for purchases using premium currency (Elder Gold) and acquiring this currency through the Steam Overlay <b>payment flow</b>. 
-                        Built the storefront with a <b>modular</b> and <b>data-driven architecture</b>, allowing new catalog content, promotions, and monetization features to be deployed efficiently without UI refactoring.
-                    </p>
+                <div className='container-horizontal gap top-separator-small'>
+                    <div>
+                        <img src={require('../../../../assets/images/quests/questDesigned.png')} alt="loading..." className='png-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Mockup designed by a UX/UI designer</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={require('../../../../assets/images/quests/questAnalysed.png')} alt="loading..." className='png-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Breakdown into simple components for integration</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={require('../../../../assets/images/quests/questResult.png')} alt="loading..." className='png-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Final result with assets included</em></h5>
+                        </div>
+                    </div>
+                </div>
 
-                    <ul>
-                    <li><h4>Storefront UI architecture</h4></li>
-                    <li><h4>LiveOps integration</h4></li>
-                    <li><h4>Steam overlay purchase integration</h4></li>
-                    <li><h4>Scalable shop category structure</h4></li>
-                    </ul>
+                <div>
                 </div>
             </div>
             
-            <div className='container-horizontal gap top-separator-small'>
-                <div>
-                    <img src={require('../../../../assets/images/shop/StoreHomePageDesign.png')} alt="loading..." className='png-img'/>
-                    <div className='center top-separator-smallest'>
-                        <h5><em>Mockup designed by a UX/UI designer</em></h5>
-                    </div>
-                </div>
-                <div>
-                    <img src={require('../../../../assets/images/shop/StoreHomePageMockup.png')} alt="loading..." className='png-img'/>
-                    <div className='center top-separator-smallest'>
-                        <h5><em>Page layout showing the main elements</em></h5>
-                    </div>
-                </div>
-                <div>
-                    <img src={require('../../../../assets/images/shop/StoreHomePageResult.png')} alt="loading..." className='png-img'/>
-                    <div className='center top-separator-smallest'>
-                        <h5><em>Final result including assets</em></h5>
-                    </div>
-                </div>
-            </div>
-
-            <div className='center'>
-                <Carousel data={CarouselData} />
-            </div>
-
-
-            {/* ------------------------------------------------------------------------------------------------ */}
-            <div className='center top-separator'>
-                <Divider className='center small-div'>
-                    <h3>QUESTS</h3>
-                </Divider>
-            </div>
-
-            <div className='center'>
-                <p><em>Reinforced long-term player retention through clear progression and reward visibility.</em></p>
-            </div>
-
-            <div className='container-video-text gap'>
-                <div>
-                    <div className='center'>  
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                        <Tabs value={qvalue} textColor="secondary" indicatorColor="secondary" onChange={qhandleChange} aria-label="basic tabs example">
-                            <Tab label="Polished" {...a11yProps(0)} />
-                            <Tab label="Component Parameters" {...a11yProps(1)} />
-                            <Tab label="Particules Code" {...a11yProps(2)} />
-                        </Tabs>
-                        </Box>
-                    </div>
-                    <div className='center'>  
-                        <CustomTabPanel value={qvalue} index={0}>
-                        <div className="video-border ratio ratio-16x9">
-                            <iframe 
-                                width="560" 
-                                height="304"
-                                src="https://www.youtube.com/embed/_uS4u4RN9Ho" title="Trailer Video" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                        </CustomTabPanel>
-                        <CustomTabPanel value={qvalue} index={1}>
-                        <div className="video-border ratio ratio-16x9">
-                            <iframe 
-                                width="560" 
-                                height="304" 
-                                src={require('../../../../assets/images/quests/buildoDetails.png')} title="Trailer Video" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                        </CustomTabPanel>
-                        <CustomTabPanel value={qvalue} index={2}>
-                        <div className="video-border ratio ratio-16x9">
-                            <iframe 
-                                width="560" 
-                                height="304" 
-                                src={require('../../../../assets/images/quests/codeAnalysed.png')} title="Trailer Video" frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
-                        </div>
-                        </CustomTabPanel>
-                    </div>
+            {/* CUSTOMIZATIONS ------------------------------------------------------------------------------------------------ */}
+            <div>
+                <div className='center top-separator'>
+                    <Divider className='center small-div'>
+                        <h3>CUSTOMIZATIONS</h3>
+                    </Divider>
                 </div>
 
-                <div className="text-container">
-                    <p>
-                        Implemented a recurring quest system supporting <b>daily and weekly objectives</b> through a <b>LiveOps-driven</b> configuration pipeline.
-                    </p>
-                    <p>
-                        The system supported <b>multiple quest pools</b> with assignment logic, so that both easy and difficult daily quests could be provided.
-                        Reward feedback animations were fully generated in code to minimize performance overhead and dynamically adapt particle quantities to reward values.
-                    </p>
-                    <p>
-                        <em>While this approach improved runtime efficiency, it also revealed limitations in animation flexibility and iteration speed, highlighting future opportunities for tooling improvements.</em>
-                    </p>
-                   
-                    <ul>
-                    <li><h4>Progress tracking UI</h4></li>
-                    <li><h4>LiveOps integration</h4></li>
-                    <li><h4>Runtime-generated reward VFX</h4></li>
-                    <li><h4>Performance-conscious animation systems</h4></li>
-                    </ul>
-                </div>
-            </div>
+                <div className='container-horizontal gap'>
+                    <div className="text-container">
+                        <p>Built a modular 2D profile customization interface allowing players to equip banners, borders, and titles through a fast, category-based navigation system.</p>
+                        <p>Focused on clear visual feedback, responsive interactions, and scalable content management for future LiveOps updates.</p>
 
-            <div className='container-horizontal gap top-separator-small'>
-                <div>
-                    <img src={require('../../../../assets/images/quests/questDesigned.png')} alt="loading..." className='png-img'/>
-                    <div className='center top-separator-smallest'>
-                        <h5><em>Mockup designed by a UX/UI designer</em></h5>
+                        <p>The UI architecture was designed to support dynamic content injection without requiring client-side restructuring.</p>
+                        
+                        <ul>
+                        <li><h4>Data-driven category system</h4></li>
+                        <li><h4>Optimized menu navigation flow</h4></li>
+                        <li><h4>Visual state feedback for equipped items</h4></li>
+                        <li><h4>Scalable UI structure for future cosmetics</h4></li>
+                        </ul>
+
+                    </div>
+                    <Divider orientation="vertical" variant="middle" flexItem />
+                    <div className="text-container">
+                        <p>Developed a scalable champion customization interface connected to a LiveOps backend, allowing newly released cosmetic items to be equipped dynamically without additional UI implementation.</p>
+                        <p>Implemented on-demand 3D model instantiation to reduce unnecessary memory usage and improve runtime performance.</p>
+                        <p>Explored preload strategies to minimize transition latency between character previews while balancing loading costs and responsiveness.</p>
+                        <p>Items purchased through the in-game shop could be equipped directly from the customization screen, improving UX continuity.</p>
+
+                        <ul>
+                        <li><h4>Dynamic cosmetic loading pipeline</h4></li>
+                        <li><h4>UI-to-Shop integration</h4></li>
+                        <li><h4>Performance optimization for character preview systems</h4></li>
+                        </ul>                        
+
                     </div>
                 </div>
-                <div>
-                    <img src={require('../../../../assets/images/quests/questAnalysed.png')} alt="loading..." className='png-img'/>
-                    <div className='center top-separator-smallest'>
-                        <h5><em>Breakdown into simple components for integration</em></h5>
-                    </div>
-                </div>
-                <div>
-                    <img src={require('../../../../assets/images/quests/questResult.png')} alt="loading..." className='png-img'/>
-                    <div className='center top-separator-smallest'>
-                        <h5><em>Final result with assets included</em></h5>
-                    </div>
-                </div>
+                
             </div>
 
             <div>
-            </div>
-
-            {/* ------------------------------------------------------------------------------------------------ */}
-            <div className='center top-separator'>
-                <Divider className='center small-div'>
-                    <h3>CUSTOMIZATIONS</h3>
-                </Divider>
-            </div>
-
-            <div className='container-horizontal'>
-
-                <div className="text-container">
-                    <p>Versatile <b>software engineer</b> with experience in both the <b>video game</b> and <b>aerospace</b> industries. I worked for one year at 
-                    
-                    <em> <a target="_blank" rel='noreferrer' href='https://www.quanticdream.com/'>Quantic Dream</a> </em>
-
-                    as a <b>UI Developer</b>, contributing to the multiplayer MOBA project 
-                    
-                    <em> <a target="_blank" rel='noreferrer' href='https://www.spellcasterschronicles.com/'>Spellcasters Chronicles</a>. </em>
-                    
-                    My work focused on developing <b>scalable, high-performance user interfaces</b>, including in-game shop systems with <b>Steam</b> transaction integration, 2D and 3D customization systems, daily quest features, HUD implementation, and UI performance optimization.</p>
-
-                    <p>I also gained professional experience in the aerospace sector through civilian projects for the DGAC (Directorate General of Civil Aviation), developing applications used in air traffic control towers (<em>Elvira</em> and <em>Redevance</em>), as well as military projects for Safran Aircraft Engines involving Rafale aircraft engine systems.</p>
-
-                    <p>With a background in <b>robotics engineering</b>, I specialize in <b>C/C++ development</b> and real-time systems, combining strong technical expertise with a focus on intuitive and efficient UI/UX design.</p>
+                 <div className='center'>
+                    <ul className='list-vertical'>
+                    <h4>The customization 3D/2D pipeline used:</h4>
+                    <li><h4>53 creature cosmetics</h4></li>
+                    <li><h4>56 spellcaster cosmetics</h4></li>
+                    <li><h4>107 catalyst cosmetics</h4></li>
+                    <li><h4>3 lifestone cosmetics</h4></li>
+                    <li><h4>33 banners</h4></li>
+                    <li><h4>8 borders</h4></li>
+                    <li><h4>11 titles</h4></li>
+                    </ul>
                 </div>
             </div>
         </div>
