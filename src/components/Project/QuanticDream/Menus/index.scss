@@ -26,13 +26,13 @@
 
 .tabs {
     cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-bottom: none;
-    background-color: #f1f1f1;
+    color: $test-color;
+    //padding: 10px;
+    //margin-right: 10px;
+    //border: 1px solid #ddd;
+    //border-bottom: none;
+    //background-color: #f1f1f1;
 }
-
 
 h2 {
     color: $secondary-color;
