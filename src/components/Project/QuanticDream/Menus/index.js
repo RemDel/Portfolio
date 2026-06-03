@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 //import flowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
 import CarouselData from "../Carousel/carouselData";
 import Carousel from '../Carousel';
+import variables from '../../../variables.module.scss';
 
 
 function CustomTabPanel(props) {
@@ -45,6 +46,11 @@ const Menus = () => {
         setValue(newValue);
     };
 
+    const [qvalue, qsetValue] = React.useState(0);
+    const qhandleChange = (event, newValue) => {
+        qsetValue(newValue);
+    };
+
     return (
         <div className='container-all'>
             <Divider className='center'>
@@ -67,9 +73,9 @@ const Menus = () => {
                 <div>
                     <div className='center'>  
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                            <Tab label="Polished" {...a11yProps(0)} />
-                            <Tab label="Prototype" {...a11yProps(1)} />
+                        <Tabs value={value} textColor="secondary" indicatorColor="secondary" onChange={handleChange}>
+                            <Tab label="Polished" {...a11yProps(0)}/>
+                            <Tab label="Prototype" {...a11yProps(1)}/>
                         </Tabs>
                         </Box>
                     </div>
@@ -135,14 +141,51 @@ const Menus = () => {
             </div>
 
             <div className='container-video-text gap'>
-                <div className="video-border ratio ratio-16x9">
-                    <iframe 
-                        width="560" 
-                        height="304"
-                        src="https://www.youtube.com/embed/_uS4u4RN9Ho" title="Trailer Video" frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen>
-                    </iframe>
+                <div>
+                    <div className='center'>  
+                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                        <Tabs value={qvalue} textColor="secondary" indicatorColor="secondary" onChange={qhandleChange} aria-label="basic tabs example">
+                            <Tab label="Polished" {...a11yProps(0)} />
+                            <Tab label="Component Parameters" {...a11yProps(1)} />
+                            <Tab label="Particules Code" {...a11yProps(2)} />
+                        </Tabs>
+                        </Box>
+                    </div>
+                    <div className='center'>  
+                        <CustomTabPanel value={qvalue} index={0}>
+                        <div className="video-border ratio ratio-16x9">
+                            <iframe 
+                                width="560" 
+                                height="304"
+                                src="https://www.youtube.com/embed/_uS4u4RN9Ho" title="Trailer Video" frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
+                        </CustomTabPanel>
+                        <CustomTabPanel value={qvalue} index={1}>
+                        <div className="video-border ratio ratio-16x9">
+                            <iframe 
+                                width="560" 
+                                height="304" 
+                                src={require('../../../../assets/images/quests/buildoDetails.png')} title="Trailer Video" frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
+                        </CustomTabPanel>
+                        <CustomTabPanel value={qvalue} index={2}>
+                        <div className="video-border ratio ratio-16x9">
+                            <iframe 
+                                width="560" 
+                                height="304" 
+                                src={require('../../../../assets/images/quests/codeAnalysed.png')} title="Trailer Video" frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen>
+                            </iframe>
+                        </div>
+                        </CustomTabPanel>
+                    </div>
                 </div>
 
                 <div className="text-container">
@@ -185,6 +228,9 @@ const Menus = () => {
                         <h5><em>Final result with assets included</em></h5>
                     </div>
                 </div>
+            </div>
+
+            <div>
             </div>
 
             {/* ------------------------------------------------------------------------------------------------ */}
