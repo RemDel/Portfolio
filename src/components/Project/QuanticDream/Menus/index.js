@@ -244,7 +244,7 @@ const Menus = () => {
                         </div>
                     </div>
                     <div>
-                        <img src={require('../../../../assets/images/quests/questResult.png')} alt="loading..." className='png-img'/>
+                        <img src={require('../../../../assets/images/quests/QuestGifCroped.gif')} alt="loading..." className='png-img'/>
                         <div className='center top-separator-smallest'>
                             <h5><em>Final result with assets included</em></h5>
                         </div>
