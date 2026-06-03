@@ -1,5 +1,9 @@
 const CarouselData = [
     {
+        "src": require("../../../../assets/images/carouselImg/StoreCongratsPage02.png"),
+        "alt": "Character reward presentation from the purchased bundle"
+    },
+    {
         "src": require("../../../../assets/images/carouselImg/CurrencyPage.png"),
         "alt": "In-game currency acquisition screen"
     },
@@ -10,14 +14,6 @@ const CarouselData = [
     {
         "src": require("../../../../assets/images/carouselImg/StoreCongratsPage01.png"),
         "alt": "Bundle banner reward presentation"
-    },
-    {
-        "src": require("../../../../assets/images/carouselImg/StoreCongratsPage02.png"),
-        "alt": "Character reward presentation from the purchased bundle"
-    },
-    {
-        "src": require("../../../../assets/images/carouselImg/StoreHomePage.png"),
-        "alt": "Main store browsing interface"
     },
     {
         "src": require("../../../../assets/images/carouselImg/StoreValidationPage01.png"),

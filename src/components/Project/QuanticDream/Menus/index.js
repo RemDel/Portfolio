@@ -9,7 +9,6 @@ import Box from '@mui/material/Box';
 //import flowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
 import CarouselData from "../Carousel/carouselData";
 import Carousel from '../Carousel';
-import variables from '../../../variables.module.scss';
 
 
 function CustomTabPanel(props) {
@@ -124,6 +123,27 @@ const Menus = () => {
                 </div>
             </div>
             
+            <div className='container-horizontal gap top-separator-small'>
+                <div>
+                    <img src={require('../../../../assets/images/shop/StoreHomePageDesign.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Mockup designed by a UX/UI designer</em></h5>
+                    </div>
+                </div>
+                <div>
+                    <img src={require('../../../../assets/images/shop/StoreHomePageMockup.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Page layout showing the main elements</em></h5>
+                    </div>
+                </div>
+                <div>
+                    <img src={require('../../../../assets/images/shop/StoreHomePageResult.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Final result including assets</em></h5>
+                    </div>
+                </div>
+            </div>
+
             <div className='center'>
                 <Carousel data={CarouselData} />
             </div>
