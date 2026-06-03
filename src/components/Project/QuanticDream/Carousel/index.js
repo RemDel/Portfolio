@@ -13,11 +13,7 @@ const Carousel = ({ data }) => {
 
   return (
     <div>
-      <div>
-        {data.map((item, idx) => {
-          return <h5 className={slide === idx ? "slide-desc" : "slide-desc slide-hidden"}> <em>{item.alt}</em> </h5>
-        })}
-      </div>
+      
 
       <div className="carousel">
         <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide}/>
@@ -32,6 +28,11 @@ const Carousel = ({ data }) => {
         </span>
       </div>
       
+      <div className="center">
+        {data.map((item, idx) => {
+          return <h5 className={slide === idx ? "slide-desc" : "slide-desc slide-hidden"}> <em>{item.alt}</em> </h5>
+        })}
+      </div>
     </div>
   );
 };

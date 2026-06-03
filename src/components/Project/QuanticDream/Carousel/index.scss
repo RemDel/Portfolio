@@ -44,6 +44,8 @@
     align-items: center;
     width: 600px;
     height: 400px;
+    //transform: translateY(0px);
+    //border: 1px solid $test-color;
 }
 
 .center {
@@ -54,9 +56,9 @@
 
 .slide {
     border-radius: 0.5rem;
-    box-shadow: 0px 0px 7px $shadow-color;
     width: 100%;
     height: auto;
+    user-select: none;
 }
 
 .arrow {
@@ -64,7 +66,7 @@
     width: 2rem;
     height: 2rem;
     color: $background-color;
-    filter: drop-shadow(0px 0px 5px $border-color);
+    filter: drop-shadow(0px 0px 2px $border-color);
 }
 
 .arrow-left {
@@ -80,7 +82,7 @@
 .indicators {
     display: flex;
     position: absolute;
-    bottom: 1rem;
+    bottom: -2rem;
 }
 
 .indicator {
@@ -89,7 +91,7 @@
     border-radius: 100%;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 5px $border-color;
+    box-shadow: 0px 0px 3px $border-color;
     margin: 0 0.5rem;
     cursor: pointer;
 }
@@ -103,10 +105,11 @@
 }
 
 h5 {
-    transform: translateY(50px);
+    transform: translateY(-50px);
     font-size: 14px;
     color: $primary-color;
     font-family: sans-serif;
     font-weight: 300;
     text-align: justify;
+    user-select: none;
 }

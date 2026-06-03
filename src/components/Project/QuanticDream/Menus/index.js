@@ -6,9 +6,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
-//import FlowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
+//import flowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
 import CarouselData from "../Carousel/carouselData";
 import Carousel from '../Carousel';
+
 
 function CustomTabPanel(props) {
   const { children, value, index } = props;
@@ -50,13 +51,19 @@ const Menus = () => {
                 <h2>MENUS</h2>
             </Divider>
             
-            <div className='center'>
+
+            {/* ------------------------------------------------------------------------------------------------ */}
+            <div className='center top-separator'>
                 <Divider className='center small-div'>
-                    <h2>SHOP</h2>
+                    <h3>SHOP</h3>
                 </Divider>
             </div>
 
-            <div className="container-video-text">
+            <div className='center'>
+                <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
+            </div>
+
+            <div className="container-video-text gap">
                 <div>
                     <div className='center'>  
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -92,7 +99,7 @@ const Menus = () => {
                     </div>
                 </div>
 
-                <div className="text-container spacing-item">
+                <div className="text-container">
                     <p>
                         Developed and integrated the <b>in-game storefront UI</b>, supporting cosmetic purchases, virtual currency transactions, and <b>LiveOps content delivery</b>. 
                         Collaborated closely with <em>UX/UI designers</em>, <em>Online Services</em>, and <em>Gameplay Programming</em> teams to ensure accurate display of transaction and inventory data within the client.
@@ -104,34 +111,86 @@ const Menus = () => {
 
                     <ul>
                     <li><h4>Storefront UI architecture</h4></li>
+                    <li><h4>LiveOps integration</h4></li>
                     <li><h4>Steam overlay purchase integration</h4></li>
-                    <li><h4>Live content support</h4></li>
                     <li><h4>Scalable shop category structure</h4></li>
                     </ul>
                 </div>
             </div>
             
             <div className='center'>
-                <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
-            </div>
-
-            <div className='center'>
                 <Carousel data={CarouselData} />
             </div>
 
 
-
-
-
-            <div className='center'>
+            {/* ------------------------------------------------------------------------------------------------ */}
+            <div className='center top-separator'>
                 <Divider className='center small-div'>
-                    <h2>QUESTS</h2>
+                    <h3>QUESTS</h3>
                 </Divider>
             </div>
 
             <div className='center'>
+                <p><em>Reinforced long-term player retention through clear progression and reward visibility.</em></p>
+            </div>
+
+            <div className='container-video-text gap'>
+                <div className="video-border ratio ratio-16x9">
+                    <iframe 
+                        width="560" 
+                        height="304"
+                        src="https://www.youtube.com/embed/_uS4u4RN9Ho" title="Trailer Video" frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen>
+                    </iframe>
+                </div>
+
+                <div className="text-container">
+                    <p>
+                        Implemented a recurring quest system supporting <b>daily and weekly objectives</b> through a <b>LiveOps-driven</b> configuration pipeline.
+                    </p>
+                    <p>
+                        The system supported <b>multiple quest pools</b> with assignment logic, so that both easy and difficult daily quests could be provided.
+                        Reward feedback animations were fully generated in code to minimize performance overhead and dynamically adapt particle quantities to reward values.
+                    </p>
+                    <p>
+                        <em>While this approach improved runtime efficiency, it also revealed limitations in animation flexibility and iteration speed, highlighting future opportunities for tooling improvements.</em>
+                    </p>
+                   
+                    <ul>
+                    <li><h4>Progress tracking UI</h4></li>
+                    <li><h4>LiveOps integration</h4></li>
+                    <li><h4>Runtime-generated reward VFX</h4></li>
+                    <li><h4>Performance-conscious animation systems</h4></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className='container-horizontal gap top-separator-small'>
+                <div>
+                    <img src={require('../../../../assets/images/quests/questDesigned.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Mockup designed by a UX/UI designer</em></h5>
+                    </div>
+                </div>
+                <div>
+                    <img src={require('../../../../assets/images/quests/questAnalysed.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Breakdown into simple components for integration</em></h5>
+                    </div>
+                </div>
+                <div>
+                    <img src={require('../../../../assets/images/quests/questResult.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Final result with assets included</em></h5>
+                    </div>
+                </div>
+            </div>
+
+            {/* ------------------------------------------------------------------------------------------------ */}
+            <div className='center top-separator'>
                 <Divider className='center small-div'>
-                    <h2>CUSTOMIZATIONS</h2>
+                    <h3>CUSTOMIZATIONS</h3>
                 </Divider>
             </div>
 
