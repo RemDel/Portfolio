@@ -65,16 +65,16 @@ const QuanticDream = () => {
             <h2>Summary of Contributions</h2>
             <div className="container-list-button">
                 <p className='flat-button-project' onClick={() => { menuRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>MENUS</p>
-                <p className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>
                 <p className='flat-button-project' onClick={() => { perfRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>PERFORMANCES</p>
+                <p className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>
             </div>
         </div>
 
 
         <div className='detail-contribution'>
             <div ref={menuRef}> <Menus /> </div>
-            <div ref={hudRef}> <HUD /> </div>
             <div ref={perfRef}> <Performances /> </div>
+            <div ref={hudRef}> <HUD /> </div>
         </div>
     </div>
     );

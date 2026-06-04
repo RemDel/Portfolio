@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-
-//import flowShopImg from '../../../../assets/images/Reflexion UI Dev SHOP - FLOW RECAP.jpg'
 import CarouselData from "../Carousel/carouselData";
 import MockupShopData from "../Carousel/mockupShopData";
 import Carousel from '../Carousel';
@@ -251,8 +249,6 @@ const Menus = () => {
                     </div>
                 </div>
 
-                <div>
-                </div>
             </div>
             
             {/* CUSTOMIZATIONS ------------------------------------------------------------------------------------------------ */}
