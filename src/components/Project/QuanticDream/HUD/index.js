@@ -158,10 +158,43 @@ return (
                     </Divider>
                 </div>
 
-                <div className='center'>
-                    <p><em>Reorganized the UI data architecture by separating resources into dedicated runtime categories based on game flow states.</em></p>
+                <div className='container-horizontal gap top-separator-small'>
+                    <div>
+                        <p className='center'>Version 1</p>
+                        <img src={require('../../../../assets/images/lvlup/v1.png')} alt="loading..." className='height-minimap-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Up to three modifiers per bonus</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 2</p>
+                        <img src={require('../../../../assets/images/lvlup/v2.png')} alt="loading..." className='height-minimap-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>One modifier, with a full description</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 3</p>
+                        <img src={require('../../../../assets/images/lvlup/v3.png')} alt="loading..." className='height-minimap-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Design in line with the art direction</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 4</p>
+                        <img src={require('../../../../assets/images/lvlup/v4.png')} alt="loading..." className='height-minimap-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Reorganization of information</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 5</p>
+                        <img src={require('../../../../assets/images/lvlup/v5.png')} alt="loading..." className='height-minimap-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Final implementation</em></h5>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
             {/* MISCELLANEOUS ------------------------------------------------------------------------------------------------ */}
