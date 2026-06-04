@@ -263,12 +263,37 @@ const Menus = () => {
                     </Divider>
                 </div>
 
-                <div className='container-horizontal gap'>
-                    <div className="text-container">
-                        <p>Built a modular 2D profile customization interface allowing players to equip banners, borders, and titles through a fast, category-based navigation system.</p>
-                        <p>Focused on clear visual feedback, responsive interactions, and scalable content management for future LiveOps updates.</p>
+                
+                <div className='container-video-text top-separator-small gap-big'>
+                    <div className="video-border ratio ratio-16x9">
+                        <iframe 
+                            width="560" 
+                            height="304"
+                            src="https://www.youtube.com/embed/vDEURD_TKNo" title="Trailer Video" frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                        </iframe>
+                    </div>
+                    <Divider orientation="vertical" variant="middle" flexItem />
+                    <div className="video-border ratio ratio-16x9">
+                        <iframe 
+                            width="560" 
+                            height="304"
+                            src="https://www.youtube.com/embed/DdUfd5PkMDI" title="Trailer Video" frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
 
-                        <p>The UI architecture was designed to support dynamic content injection without requiring client-side restructuring.</p>
+                <div className='container-horizontal gap top-separator-smallest'>
+                    <div className="text-container">
+                        <h3>2D</h3>
+
+                        <p>Built a modular 2D profile <b>customization interface</b> allowing players to equip banners, borders, and titles through a category-based navigation system.</p>
+                        <p>Focused on clear visual feedback, responsive interactions, and scalable content management for <b>LiveOps updates</b>.</p>
+
+                        <p>The UI architecture was designed to support <b>dynamic content injection</b> without requiring client-side restructuring.</p>
                         
                         <ul>
                         <li><h4>Data-driven category system</h4></li>
@@ -280,34 +305,54 @@ const Menus = () => {
                     </div>
                     <Divider orientation="vertical" variant="middle" flexItem />
                     <div className="text-container">
-                        <p>Developed a scalable champion customization interface connected to a LiveOps backend, allowing newly released cosmetic items to be equipped dynamically without additional UI implementation.</p>
-                        <p>Implemented on-demand 3D model instantiation to reduce unnecessary memory usage and improve runtime performance.</p>
-                        <p>Explored preload strategies to minimize transition latency between character previews while balancing loading costs and responsiveness.</p>
-                        <p>Items purchased through the in-game shop could be equipped directly from the customization screen, improving UX continuity.</p>
+                        <h3>3D</h3>
+                        <p>Developed a character customization interface. The UI system is <b>built to be scalable</b>, allowing for the addition of new items to the inventory, whether they are unlocked or locked, purchased from the shop, or received as rewards.</p>
+                        <p>Implemented on-demand 3D model instantiation to reduce unnecessary memory usage and improve runtime performance. Explored preload strategies to minimize transition latency between character previews.</p>
+                        <p>Items purchased through the <b>in-game shop</b> could be equipped directly from the customization screen.</p>
 
                         <ul>
                         <li><h4>Dynamic cosmetic loading pipeline</h4></li>
+                        <li><h4>LiveOps integration</h4></li>
                         <li><h4>UI-to-Shop integration</h4></li>
-                        <li><h4>Performance optimization for character preview systems</h4></li>
                         </ul>                        
 
                     </div>
                 </div>
-                
             </div>
+            
+            <div className='container-horizontal gap-big top-separator'>
+                <div>
+                    <img src={require('../../../../assets/images/customization/MockupCusto2DPage01.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Mockup designed by a UX/UI designer</em></h5>
+                    </div>
+                </div>
 
-            <div>
-                 <div className='center'>
-                    <ul className='list-vertical'>
-                    <h4>The customization 3D/2D pipeline used:</h4>
-                    <li><h4>53 creature cosmetics</h4></li>
-                    <li><h4>56 spellcaster cosmetics</h4></li>
-                    <li><h4>107 catalyst cosmetics</h4></li>
-                    <li><h4>3 lifestone cosmetics</h4></li>
-                    <li><h4>33 banners</h4></li>
-                    <li><h4>8 borders</h4></li>
-                    <li><h4>11 titles</h4></li>
-                    </ul>
+                <div>
+                    <div className="video-border ratio ratio-16x9">
+                        <div className='center'>
+                            <h5 className='center'><em>Banner component rules</em></h5>
+                        </div>
+                        <img className="banner-img translate-up" src={require('../../../../assets/images/customization/custo2DBannerMockupDesign.png')} alt="profile"></img>
+                    </div>
+                    
+                    <div className='text-list'>
+                        <h6>53 creature cosmetics</h6> 
+                        <h6>56 spellcaster cosmetics</h6>
+                        <h6>107 catalyst cosmetics</h6>
+                        <h6>3 lifestone cosmetics</h6>
+                        <h6>33 banners</h6>
+                        <h6>8 borders</h6>
+                        <h6>11 titles</h6>
+                    </div>
+
+                </div>
+
+                <div>
+                    <img src={require('../../../../assets/images/customization/Custo2DSelectionPage.png')} alt="loading..." className='png-img'/>
+                    <div className='center top-separator-smallest'>
+                        <h5><em>Final result with assets included</em></h5>
+                    </div>
                 </div>
             </div>
         </div>
