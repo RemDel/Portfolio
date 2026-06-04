@@ -126,6 +126,12 @@ h6 {
     height: 225px;
 }
 
+.height-minimap-img {
+    border-radius: 0.5rem;
+    width: auto;
+    height: 270px;
+}
+
 .gap {
     gap: 4em;
     //border: 1px solid $test-color;
@@ -160,4 +166,9 @@ h6 {
 
 .translate-up {
     transform: translateY(-50px);
+}
+
+.div50 {
+    width: 50%;
+    transform: translateX(0px);
 }
