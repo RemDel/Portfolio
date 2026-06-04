@@ -194,6 +194,13 @@ return (
                             <h5><em>Final implementation</em></h5>
                         </div>
                     </div>
+                    <div>
+                        <p className='center'><em>(Version 6 - Not Implemented)</em></p>
+                        <img src={require('../../../../assets/images/lvlup/v6.png')} alt="loading..." className='height-minimap-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>(New design by a UX/UI designer)</em></h5>
+                        </div>
+                    </div>
                 </div>
             </div>
 
