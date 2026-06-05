@@ -35,6 +35,10 @@ function a11yProps(index) {
 }
 
 const HUD = () => {
+    const [value, setValue] = React.useState(0);
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
     const [qvalue, qsetValue] = React.useState(0);
     const qhandleChange = (event, newValue) => {
         qsetValue(newValue);
@@ -136,7 +140,7 @@ return (
                     </div>
 
                     <div>
-                        <img src={require('../../../../assets/images/minimap/MinimapBefore.gif')} alt="loading..." className='png-img-minimap'/>
+                        <img src={require('../../../../assets/images/minimap/MinimapBefore3.gif')} alt="loading..." className='png-img-minimap'/>
                         <div className='center top-separator-smallest'>
                             <h5><em>Original minimap before revamp</em></h5>
                         </div>
@@ -158,7 +162,130 @@ return (
                     </Divider>
                 </div>
 
-                <div className='container-horizontal gap top-separator-small'>
+                <div className="container-video-text gap">
+                    <div>
+                        <div className='center'>  
+                            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                            <Tabs value={value} textColor="secondary" indicatorColor="secondary" onChange={handleChange}>
+                                <Tab label="Game Designer Insights" {...a11yProps(0)}/>
+                                <Tab label="UX/UI Mockup" {...a11yProps(1)}/>
+                                <Tab label="Prototype" {...a11yProps(2)}/>
+                                <Tab label="Final result" {...a11yProps(3)}/>
+                                <Tab label="(not implemented)" {...a11yProps(4)}/>
+                            </Tabs>
+                            </Box>
+                        </div>
+                        <div className='center'>  
+                            <CustomTabPanel value={value} index={0}>
+                            <div className="video-border ratio ratio-16x9">
+                                <img src={require('../../../../assets/images/lvlup/versions/image.webp')} alt="loading..." className='height-minimap-img'/>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={value} index={1}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src="https://www.youtube.com/embed/El93X6Z5SBQ" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={value} index={2}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src="https://www.youtube.com/embed/p6N7tQZcwXA" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={value} index={3}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src="https://www.youtube.com/embed/Xt-Cht5vR5c" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                            <CustomTabPanel value={value} index={4}>
+                            <div className="video-border ratio ratio-16x9">
+                                <iframe 
+                                    width="560" 
+                                    height="304" 
+                                    src="https://www.youtube.com/embed/rc122qUIRK4" title="Trailer Video" frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                            </CustomTabPanel>
+                        </div>
+                    </div>
+
+                    <div className="text-container">
+                        <p>
+                            The progression is a dynamic system where players grow stronger during a match by earning points 
+                            from defeating enemies or completing objectives, allowing them to <b>level up</b> and <b>unlock upgrades</b> that shapes 
+                            their playstyle and strategy within a single match.    
+                        </p>
+
+                        <p><em>Bonus categories awarded upon leveling up:</em></p>
+                        <ul>
+                        <li><h4><b>Hero Resources</b> <em>(Life Max, Source Max, Life Recovery Speed, ...)</em></h4></li>
+                        <li><h4><b>Summons & Buildings</b> <em>(Charges, Populations Max...)</em></h4></li>
+                        <li><h4><b>Spells</b> <em>(Charges, Damage...)</em></h4></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className='center top-separator'>
+                    <p>Development of the <em>player information display</em>: health, hero image, experience, and progression <br/>
+                    The <b>design</b> has been <b>refined</b> based on internal feedback and playtests; <b>here is how it has evolved</b></p>
+                </div>
+                <div className='container-horizontal gap'>
+                    <div>
+                        <p className='center'>Version 1</p>
+                        <img src={require('../../../../assets/images/lvlup/player/playerV0.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Basic prototype with key information</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 2</p>
+                        <img src={require('../../../../assets/images/lvlup/player/playerV1.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Adding assets and animations</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 3</p>
+                        <img src={require('../../../../assets/images/lvlup/player/playerV2.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>New Design and new animations</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='center'>Version 4</p>
+                        <img src={require('../../../../assets/images/lvlup/player/playerV3.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Reorganization of information</em></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='center top-separator'>
+                    <p><em>System that enable the player to improve the Spellcaster capabilities during a single match.</em> <br/>
+                    The <b>design</b> has been <b>refined</b> based on internal feedback and playtests; <b>here is how it has evolved</b>
+                    </p>
+                </div>
+
+                <div className='container-horizontal gap'>
                     <div>
                         <p className='center'>Version 1</p>
                         <img src={require('../../../../assets/images/lvlup/v1.png')} alt="loading..." className='height-minimap-img'/>
@@ -202,6 +329,8 @@ return (
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
             {/* MISCELLANEOUS ------------------------------------------------------------------------------------------------ */}
