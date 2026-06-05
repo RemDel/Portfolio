@@ -340,6 +340,110 @@ return (
                         <h3>MISCELLANEOUS</h3>
                     </Divider>
                 </div>
+
+                <div className='center top-separator-small'>
+                    <Divider className='center big-div'>
+                        <p>HUD Lifestones</p>
+                    </Divider>
+                </div>
+                
+                <div className='center'>
+                    <p><em>The life information HUD for <b>Lifestones</b> has been redesigned.</em></p>
+                </div>
+
+                <div className='container-horizontal gap'>
+                    <div>
+                        <img src={require('../../../../assets/images/lifestones/lifestoneBefore.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Implementation prior to the redesign</em></h5>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src={require('../../../../assets/images/lifestones/lifestoneAfter.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Final result with assets and animations</em></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='container-horizontal gap top-separator-smallest'>
+                    <div>
+                        <img src={require('../../../../assets/images/lifestones/lifestoneProto.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Basic prototype</em></h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={require('../../../../assets/images/lifestones/graphLifestone2.png')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Animation graph</em></h5>
+                        </div>
+                    </div>
+                    <div className="text-container">
+                        <p>
+                            The Lifestone shares the same visual identity as its minimap icon, ensuring <b>instant recognition.</b></p>
+                        <p>
+                            Its alert animation <em>dynamically accelerates</em> as health decreases, providing <b>clear urgency cues</b>. 
+                            A destruction animation was considered but excluded to preserve visual clarity and reduce screen clutter.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div className='center top-separator-small'>
+                    <Divider className='center big-div'>
+                        <p>Tutorial</p>
+                    </Divider>
+                </div>
+                <div className='container-horizontal gap top-separator-smallest'>
+                    <div>
+                        <img src={require('../../../../assets/images/tutorial/Tutorial Pop-Up.gif')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Developed a simple pop-up window to display information during the tutorial</em></h5>
+                        </div>
+                    </div>                    
+                    <div>
+                        <img src={require('../../../../assets/images/tutorial/tutorial.png')} alt="loading..." className='height-img'/>
+                        <div className='center top-separator-smallest'>
+                            <h5><em>Screenshot from the tutorial</em></h5>
+                        </div>
+                    </div>
+
+                    <div className="text-container">
+                        <p>Implemented the UI for <b>tutorial subtitles</b> and the <b>FTUE checklist</b>, 
+                        ensuring clear guidance and objective tracking throughout the <em>onboarding experience.</em></p>
+                    </div>
+                </div>
+
+
+                <div className='center top-separator-small'>
+                    <Divider className='center big-div'>
+                        <p>Moderation system</p>
+                    </Divider>
+                </div>
+                
+                
+                <div className='center'>
+                    <p>Added a <b>reporting system</b>, accessible from the scoreboard during the game or after the game.</p>
+                </div>
+
+                <div className='container-horizontal gap'>
+                    <div className="video-border ratio ratio-16x9">
+                        <iframe 
+                            width="560" 
+                            height="304" 
+                            src="https://www.youtube.com/embed/cJ8acjqpoXY" title="Trailer Video" frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                        </iframe>
+                    </div>             
+                   
+                </div>
+            </div>
+            <div className='top-separator'>
+                <p>  .  </p>
             </div>
         </div>
     );
