@@ -62,6 +62,9 @@ return (
                 <div className='center'>
                     <p><em>Complete re-coding of the minimap interface.</em></p>
                 </div>
+                <div className='center'>
+                    <p><b>1,406 creatures/buildings</b> summoned per match, averaging <b>230</b> per player per match.</p>
+                </div>
                 
                 <div className='container-video-text'>
                     <div>

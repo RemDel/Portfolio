@@ -65,9 +65,13 @@ const Menus = () => {
                 </div>
 
                 <div className='center'>
-                    <p><em>Offers and bundle are setup in the back end through a LiveOps portal and the game shop load those offers and bundles to display them to the player.</em></p>
+                    <p><em>Offers and bundle are setup in the back end through a LiveOps portal and 
+                        the game shop load those offers and bundles to display them to the player.</em></p>
                 </div>
-
+                <div className='center'>
+                    <p><b>1,607 transactions</b> made through the in-game store.</p>
+                </div>
+                
                 <div className="container-video-text gap">
                     <div>
                         <div className='center'>  
