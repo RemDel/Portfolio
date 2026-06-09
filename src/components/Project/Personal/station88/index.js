@@ -8,7 +8,7 @@ const Station88 = () => {
     return (
         <div className='container-all'>
             <Divider className='center'>
-                <h2>Station 88</h2>
+                <h3>Station 88</h3>
             </Divider>
             
             <div className='center gap-small'>
@@ -25,13 +25,14 @@ const Station88 = () => {
                         <iframe 
                             width="560" 
                             height="304" 
-                            src="https://www.youtube.com/embed/Qkq-awLhALU" title="Trailer Video" frameBorder="0" 
+                            src="https://www.youtube.com/embed/lA-ivDNku5g" title="Trailer Video" frameBorder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>
                         </iframe>
                     </div>
                     <div className='text-container'>
-                        <p><b>Game Jam:</b> LUDUM DARE 58 - <b>Signal</b></p>
+                        <p><b>Game Jam:</b> LUDUM DARE 59</p>
+                        <p><b>Theme: </b> Signal</p>
                         <p><b>Team:</b> 3 Collaborators</p>
                         <p><b>Time Limit:</b> 72 hours</p>
                         <p><b>Engine and tools:</b> Godot, Git, Miro, Blender, C#, GLSL</p>
