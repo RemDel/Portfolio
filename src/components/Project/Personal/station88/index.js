@@ -33,6 +33,7 @@ const Station88 = () => {
                     <div className='text-container'>
                         <p><b>Game Jam:</b> LUDUM DARE 59</p>
                         <p><b>Theme: </b> Signal</p>
+                        <p><b>Date: </b> April 2026</p>
                         <p><b>Team:</b> 3 Collaborators</p>
                         <p><b>Time Limit:</b> 72 hours</p>
                         <p><b>Engine and tools:</b> Godot, Git, Miro, Blender, C#, GLSL</p>
