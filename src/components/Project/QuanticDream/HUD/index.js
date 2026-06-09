@@ -448,6 +448,9 @@ return (
             <div className='top-separator'>
                 <p>  .  </p>
             </div>
+            <div className='top-separator'>
+                <p>  .  </p>
+            </div>
         </div>
     );
 }
