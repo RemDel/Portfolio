@@ -3,6 +3,12 @@ import AnimatedLetters from '../../AnimatedLetters';
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router';
 //import Divider from '@mui/material/Divider';
+import Station88 from '../Personal/station88';
+import MaggsPotionStore from '../Personal/maggspotionstore';
+import SpaceLtd from '../Personal/spaceltd';
+import ExpMulti from '../Personal/expmulti';
+import Exp3D from '../Personal/exp3d';
+import Exp2D from '../Personal/exp2d';
 
 const PersonalProject = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -75,12 +81,12 @@ const PersonalProject = () => {
         </div>
 
         <div className='detail-contribution'>
-            <div ref={station88}> station88 </div>
-            <div ref={potionstore}> potionstore </div>
-            <div ref={spaceltd}> spaceltd </div>
-            <div ref={expmulti}> expmulti </div>
-            <div ref={exp3d}> exp3d </div>
-            <div ref={exp2d}> exp2d </div>
+            <div ref={station88}> <Station88 /> </div>
+            <div ref={potionstore}> <MaggsPotionStore /> </div>
+            <div ref={spaceltd}> <SpaceLtd /> </div>
+            <div ref={expmulti}> <ExpMulti /> </div>
+            <div ref={exp3d}> <Exp3D /> </div>
+            <div ref={exp2d}> <Exp2D /> </div>
         </div>
     </div>
     );
