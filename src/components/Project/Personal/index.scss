@@ -119,6 +119,12 @@ h6 {
     user-select: none;
 }
 
+.png-img-crop {
+    border-radius: 0.5rem;
+    height: 200px;
+    user-select: none;
+}
+
 .banner-img {
     width: 400px;
     height: auto;
@@ -139,6 +145,10 @@ h6 {
 .gap {
     gap: 4em;
     //border: 1px solid $test-color;
+}
+
+.gap-small {
+    gap: 2em;
 }
 
 .gap-big {
