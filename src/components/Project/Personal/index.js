@@ -5,7 +5,7 @@ import { useLocation } from 'react-router';
 //import Divider from '@mui/material/Divider';
 import Station88 from '../Personal/station88';
 import MaggsPotionStore from '../Personal/maggspotionstore';
-import SpaceLtd from '../Personal/spaceltd';
+//import SpaceLtd from '../Personal/spaceltd';
 import ExpMulti from '../Personal/expmulti';
 import Exp3D from '../Personal/exp3d';
 import Exp2D from '../Personal/exp2d';
@@ -19,7 +19,7 @@ const PersonalProject = () => {
 
     const station88 = React.createRef();
     const potionstore = React.createRef();
-    const spaceltd = React.createRef();
+    //const spaceltd = React.createRef();
     const expmulti = React.createRef();
     const exp3d = React.createRef();
     const exp2d = React.createRef();
@@ -73,7 +73,6 @@ const PersonalProject = () => {
             <div className="container-list-button">
                 <p className='flat-button-project' onClick={() => { station88.current?.scrollIntoView({ behavior: 'smooth' }); }}>Station 88</p>
                 <p className='flat-button-project' onClick={() => { potionstore.current?.scrollIntoView({ behavior: 'smooth' }); }}>Magg's potion store</p>
-                <p className='flat-button-project' onClick={() => { spaceltd.current?.scrollIntoView({ behavior: 'smooth' }); }}>Space Ltd.</p>
                 <p className='flat-button-project' onClick={() => { expmulti.current?.scrollIntoView({ behavior: 'smooth' }); }}>Multiplayer Experiments</p>
                 <p className='flat-button-project' onClick={() => { exp3d.current?.scrollIntoView({ behavior: 'smooth' }); }}>3D Experiments</p>
                 <p className='flat-button-project' onClick={() => { exp2d.current?.scrollIntoView({ behavior: 'smooth' }); }}>2D Experiments</p>
@@ -83,7 +82,6 @@ const PersonalProject = () => {
         <div className='detail-contribution'>
             <div ref={station88}> <Station88 /> </div>
             <div ref={potionstore}> <MaggsPotionStore /> </div>
-            <div ref={spaceltd}> <SpaceLtd /> </div>
             <div ref={expmulti}> <ExpMulti /> </div>
             <div ref={exp3d}> <Exp3D /> </div>
             <div ref={exp2d}> <Exp2D /> </div>
