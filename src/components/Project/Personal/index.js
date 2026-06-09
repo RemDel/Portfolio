@@ -11,9 +11,12 @@ const PersonalProject = () => {
     const { state } = useLocation();
     const { targetId } = state || {};
 
-    const menuRef = React.createRef();
-    const hudRef = React.createRef();
-    const perfRef = React.createRef();
+    const station88 = React.createRef();
+    const potionstore = React.createRef();
+    const spaceltd = React.createRef();
+    const expmulti = React.createRef();
+    const exp3d = React.createRef();
+    const exp2d = React.createRef();
 
     useEffect(() => {
         const el = document.getElementById(targetId);
@@ -41,31 +44,43 @@ const PersonalProject = () => {
 
         <div className="container-video-text margin-qd">
             <div className='text-container'>
-                <p><b>Released:</b> Cancelled <em>(6 months Live on Steam)</em></p>
-                <p><b>Theme:</b> Competitive MOBA</p>
-                <p><b>Studio: </b>
-                    <a target="_blank" rel='noreferrer' href='https://www.quanticdream.com/'>Quantic Dream</a>
-                    <em> (150 collaborators)</em></p>
-                <p><b>Platforms:</b> PC</p>
-                <p><b>Time spent on project:</b> ~1.5 years</p>
-                <p><b>Engine and tools:</b> In-house Engine, C++</p>
+                <p><b>Abstract: </b> 
+                Since 2019, I have been developing my skills in video game development through participation in numerous game jams.
+                </p>
+                <p>
+                I began developing with Godot and later explored Unity and Unreal Engine before choosing Godot as my primary engine.
+                My first project, <a target="_blank" rel='noreferrer' href='https://demi-lune-azur.itch.io/saute-tromblon'>Saute-Tromblon</a>
+                , was created during a school game jam.
+                </p>
+                <p> 
+                Since then, I have continued to take part in game jams both independently and as part of collaborative teams, 
+                gaining experience in <em>rapid prototyping</em>, <em>gameplay programming</em>, and <em>teamwork</em>.
+                </p>
+                    
+                <p><b>Engine and tools:</b> Godot, GDScript, C#, GLSL, Aseprite, AWS (Amazon Web Service)</p>
             </div>
         </div>
 
         <div className='list-contribution'>
             
-            <h2>Summary of Contributions</h2>
+            <h2>Summary of Projects</h2>
             <div className="container-list-button">
-                <p className='flat-button-project' onClick={() => { menuRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>MENUS</p>
-                <p className='flat-button-project' onClick={() => { perfRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>PERFORMANCES</p>
-                <p className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>
+                <p className='flat-button-project' onClick={() => { station88.current?.scrollIntoView({ behavior: 'smooth' }); }}>Station 88</p>
+                <p className='flat-button-project' onClick={() => { potionstore.current?.scrollIntoView({ behavior: 'smooth' }); }}>Magg's potion store</p>
+                <p className='flat-button-project' onClick={() => { spaceltd.current?.scrollIntoView({ behavior: 'smooth' }); }}>Space Ltd.</p>
+                <p className='flat-button-project' onClick={() => { expmulti.current?.scrollIntoView({ behavior: 'smooth' }); }}>Multiplayer Experiments</p>
+                <p className='flat-button-project' onClick={() => { exp3d.current?.scrollIntoView({ behavior: 'smooth' }); }}>3D Experiments</p>
+                <p className='flat-button-project' onClick={() => { exp2d.current?.scrollIntoView({ behavior: 'smooth' }); }}>2D Experiments</p>
             </div>
         </div>
 
         <div className='detail-contribution'>
-            <div ref={menuRef}> PROJECT A </div>
-            <div ref={perfRef}> PROJECT B </div>
-            <div ref={hudRef}> PROJECT C </div>
+            <div ref={station88}> station88 </div>
+            <div ref={potionstore}> potionstore </div>
+            <div ref={spaceltd}> spaceltd </div>
+            <div ref={expmulti}> expmulti </div>
+            <div ref={exp3d}> exp3d </div>
+            <div ref={exp2d}> exp2d </div>
         </div>
     </div>
     );
