@@ -92,8 +92,8 @@ const Exp3D = () => {
                 </div>
 
                 <div className='text-container'>
-                    <p><b>Theme: </b> 3D & Shaders</p>
-                    <p><b>Date: </b> September 2024</p>
+                    <p><b>Theme: </b> Portals & Shaders</p>
+                    <p><b>Date: </b> Mars 2026</p>
                     <p><b>Team:</b> Solo</p>
                     <p><b>Engine and tools:</b> Godot, Blender, GLSL</p>
 
@@ -110,6 +110,39 @@ const Exp3D = () => {
                 <div className='center'>
                     <img src={require('../../../../assets/images/personalproject/3dexp.gif')} alt="loading..." className='png-img-minimap'/>
                 </div>
+            </div>
+
+            <div className='center gap-small'>
+                <p><em>Below is another 3D experiment featuring <b>portals</b> inspired by various concept art and the animated film "
+                <a target="_blank" rel='noreferrer' href='https://www.youtube.com/watch?v=9KD4DQ0ABvI'>
+                Suzume
+                </a>"</em></p>
+            </div>
+                
+            <div className='container-video-text gap'>
+                <div className='center'>  
+                    <div className="video-border ratio ratio-16x9">
+                        <iframe 
+                            width="560" 
+                            height="304"
+                            src="https://www.youtube.com/embed/D8ccnUakw8w" title="Trailer Video" frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div className='text-container'>
+                    <p><b>Theme: </b> Portals and Shaders</p>
+                    <p><b>Date: </b> September 2024</p>
+                    <p><b>Team:</b> Solo</p>
+                    <p><b>Engine and tools:</b> Godot, Blender, GLSL</p>
+                    
+                    <div className='center'>
+                        <img src={require('../../../../assets/images/personalproject/suzume.gif')} alt="loading..." className='gif-suzume'/>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

@@ -26,7 +26,7 @@ function WhoAmI() {
 
                 <ul>
                 <li><p><b>Languages:</b> C, C++, C#, JavaScript, TypeScript, Java, Python</p></li>
-                <li><p><b>Frameworks & Tools:</b> Qt</p></li>
+                <li><p><b>Frameworks & Tools:</b> Godot, Qt, React, Angular, VueJS</p></li>
                 <li><p><b>Expertise:</b> UI Development, UI/UX, Performance Optimization, Real-Time Applications, Scalable Systems</p></li>
                 </ul>
             </div>
