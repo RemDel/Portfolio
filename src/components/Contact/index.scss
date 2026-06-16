@@ -1,3 +1,5 @@
+@import '../variables.module.scss';
+
 .contact-form {
     width: 25%;
     margin-top: 200px;
@@ -37,7 +39,17 @@ input[type='text'],
 input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: $border-color;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+input[type='subject'] {
+    width: 100%;
+    border: 0;
+    background: $border-color;
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -48,23 +60,32 @@ input[type='email'] {
 textarea  {
     width: 100%;
     border: 0;
-    background: #115173;
-    height: 50px;
+    background: $border-color;
+    height: 50%;
+    min-height: 200px;
     font-size: 16px;
     color: #fff;
     padding: 20px;
-    min-height: 150px;
     box-sizing: border-box;
 }
 
-.flat-button {
-    color: #ffd700;
-    background: 0 0;
-    font: 11px;
-    letter-spacing: 3px;
+.flat-button-send {
+    color: $bunhover-color;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
     text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
+    padding: 10px 18px;
+    border: 1px solid $bunhover-color;
+    animation: fadeIn 1s 0.6s backwards;
+    white-space: nowrap;
     float: right;
-    border-radius: 4px;
+    margin: 20px;
+
+    &:hover {
+        color: $background-color;
+        border: 0px;
+        background-color: $bunhover-color;
+    }
 }

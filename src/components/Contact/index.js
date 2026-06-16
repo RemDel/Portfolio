@@ -20,8 +20,8 @@ const Contact = () => {
         emailjs.sendForm('service_vrc3rua', 'template_tji7fpd', refForm.current, 'CXG7jhE8Us8xe6zno')
         .then(
         () => {
-            alert('Message successfully sent!')
-            window.location.reload(false)
+            alert('Message successfully sent!');
+            window.location.reload(false);
         }, (error) => {
             alert(error.text);
         });
@@ -55,7 +55,7 @@ const Contact = () => {
                             <textarea type='message' name='message' placeholder='Message' required />
                         </li>
                         <li>
-                            <input type='submit' className='flat-button' value="SEND"/>
+                            <input type='submit' className='flat-button-send' value="SEND"/>
                         </li>
                     </ul>
                 </form>
