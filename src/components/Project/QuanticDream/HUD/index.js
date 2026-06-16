@@ -164,6 +164,10 @@ return (
                         <h3>LEVEL UP</h3>
                     </Divider>
                 </div>
+                
+                <div className='center'>
+                    <p><b>21</b> is the average <b>level</b> reached by the <b>end of the game</b>.</p>
+                </div>
 
                 <div className="container-video-text gap">
                     <div>
@@ -400,6 +404,7 @@ return (
                         <p>Tutorial</p>
                     </Divider>
                 </div>
+
                 <div className='container-horizontal gap top-separator-smallest'>
                     <div>
                         <img src={require('../../../../assets/images/tutorial/Tutorial Pop-Up.gif')} alt="loading..." className='height-img'/>
@@ -417,6 +422,8 @@ return (
                     <div className="text-container">
                         <p>Implemented the UI for <b>tutorial subtitles</b> and the <b>FTUE checklist</b>, 
                         ensuring clear guidance and objective tracking throughout the <em>onboarding experience.</em></p>
+
+                        <p><em>Number of people</em> who have <b>completed</b> the tutorial: <b>26,056</b>.</p>
                     </div>
                 </div>
 
