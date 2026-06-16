@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import QuanticDream from './components/Project/QuanticDream';
+import Aerospace from './components/Project/Aerospace';
 import Personal from './components/Project/Personal';
 import GoTop from './components/GoTop';
 
@@ -20,8 +21,8 @@ function App() {
 
       <Route path="/project" element={<Home />}> </Route>
       <Route path="/project/quanticdream" element={<QuanticDream />}> </Route>
+      <Route path="/project/aerospace" element={<Aerospace />}> </Route>
       <Route path="/project/personalprojects" element={<Personal />}> </Route>
-      <Route path="/project/quanticdream" element={<QuanticDream />}> </Route>
     </Routes>
     <GoTop />
     </>

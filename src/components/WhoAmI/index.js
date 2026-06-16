@@ -16,7 +16,7 @@ function WhoAmI() {
                 
                 <em> <a target="_blank" rel='noreferrer' href='https://www.spellcasterschronicles.com/'>Spellcasters Chronicles</a>. </em>
                 
-                My work focused on developing <b>scalable, high-performance user interfaces</b>, including in-game shop systems with <b>Steam</b> transaction integration, 2D and 3D customization systems, daily quest features, HUD implementation, and UI performance optimization.</p>
+                My work focused on developing <b>scalable, high-performance user interfaces</b>, including <u>in-game shop systems</u> with <b>Steam</b> transaction integration, 2D and 3D <u>customization systems</u>, daily quest features, HUD implementation, and <u>UI performance optimization</u>.</p>
 
                 <p>I also gained professional experience in the aerospace sector through civilian projects for the DGAC (Directorate General of Civil Aviation), developing applications used in air traffic control towers (<em>Elvira</em> and <em>Redevance</em>), as well as military projects for Safran Aircraft Engines involving Rafale aircraft engine systems.</p>
 
