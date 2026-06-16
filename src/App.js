@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import QuanticDream from './components/Project/QuanticDream';
 import Personal from './components/Project/Personal';
+import GoTop from './components/GoTop';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/project/personalprojects" element={<Personal />}> </Route>
       <Route path="/project/quanticdream" element={<QuanticDream />}> </Route>
     </Routes>
+    <GoTop />
     </>
   );
 }
