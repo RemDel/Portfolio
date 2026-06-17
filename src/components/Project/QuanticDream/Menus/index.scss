@@ -54,15 +54,15 @@ h3 {
 
 h4 {
     color : $primary-color;
-    font-size: 16px;
-    margin-top: 4px;
+    font-size: 160%;
+    margin-top: 1%;
     font-family: sans-serif;
     text-align: left;
 }
 
 h5 {
-    transform: translateY(-50px);
-    font-size: 14px;
+    //transform: translateY(-50px);
+    font-size: 140%;
     color: $primary-color;
     font-family: sans-serif;
     font-weight: 300;
@@ -72,12 +72,12 @@ h5 {
 
 h6 {
     color : $primary-color;
-    font-size: 14px;
-    margin-top: -10px;
+    font-size: 140%;
+    margin-top: -1%;
     font-weight: 300;
     font-family: sans-serif;
     text-align: center;
-    line-height: 0px;
+    line-height: 0;
 }
 
 .top-separator {
@@ -85,7 +85,7 @@ h6 {
 }
 
 .top-separator-small {
-    margin-top: 50px;
+    margin-top: 500px;
 }
 
 .top-separator-smallest {
