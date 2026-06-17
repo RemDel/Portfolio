@@ -4,15 +4,14 @@
 
     .text-zone {
         position: absolute;
-        text-align: center;//left: 150px; // 10%
-        top: 150px;
-        transform: translateY(-50%);
+        text-align: center;
         width: 100%;
         max-height: 100%;
     }
+
     h1 {
         color : $secondary-color;
-        font-size: 53px;
+        font-size: 500%;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
@@ -20,73 +19,46 @@
 
     h2 {
         color: $secondary-color;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: 1%;
+        margin-bottom: 1.5%;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 125%;
         font-family: sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 25%;
         animation: fadeIn 1s 0.2s backwards;
     }
 
     a {
         color: $secondary-color;
         text-decoration: none;
-    }
-
-    .flat-button {
-        color: $bunhover-color;
-        margin-top: 205px;
-        font-size: 13px;
         font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid $bunhover-color;
-        float: center;
-        animation: fadeIn 1s 0.6s backwards;
-        white-space: nowrap;
-
-        &:hover {
-            color: $background-color;
-            border: 0px;
-            background-color: $bunhover-color;
-        }
+        font-size: 125%;
     }
 }
 
 .button-project {
-    margin-top: 700px;
+    margin-top: 35.5%;
     width: 100%;
     height: auto;
-    //display: flex;
     justify-content: center;
     align-items: center;
-    //border: 1px solid $test-color;
-
-    .button-container{
-        //border: 1px solid $test-color;
-        padding: 15px;
-        //width: 100%;
-    }
 
     .flat-button-project {
         color: $bunhover-color;
-        font-size: 13px;
+        font-size: auto;
         font-weight: 400;
-        letter-spacing: 4px;
+        letter-spacing: 30%;
         font-family: sans-serif;
         text-decoration: none;
-        padding: 10px 18px;
         border: 1px solid $bunhover-color;
         animation: fadeIn 1s 0.6s backwards;
         white-space: nowrap;
-        margin: 20px;
+        padding: 0.5% 0.75%;
+        margin: 1.5%;
 
         &:hover {
             color: $background-color;
-            border: 0px;
+            border: 0;
             background-color: $bunhover-color;
         }
     }

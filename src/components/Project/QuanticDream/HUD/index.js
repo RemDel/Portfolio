@@ -350,7 +350,7 @@ return (
 
                 <div className='center top-separator-small'>
                     <Divider className='center big-div'>
-                        <p>HUD Lifestones</p>
+                        <h2>HUD Lifestones</h2>
                     </Divider>
                 </div>
                 

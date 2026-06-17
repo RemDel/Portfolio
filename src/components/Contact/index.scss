@@ -2,7 +2,7 @@
 
 .contact-form {
     width: 25%;
-    margin-top: 200px;
+    margin-top: 10%;
 
     ul {
         padding: 0;
@@ -12,7 +12,7 @@
             padding: 0;
             margin: 0;
             list-style: none;
-            margin-bottom: 10px;
+            margin-bottom: 4%;
             overflow: hidden;
             display: block;
             position: relative;
@@ -40,20 +40,24 @@ input[type='email'] {
     width: 100%;
     border: 0;
     background: $border-color;
-    height: 50px;
-    font-size: 16px;
+    height: auto;
+    font-size: 150%;
     color: #fff;
-    padding: 0 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
     box-sizing: border-box;
 }
 input[type='subject'] {
     width: 100%;
     border: 0;
     background: $border-color;
-    height: 50px;
-    font-size: 16px;
+    height: auto;
+    font-size: 150%;
     color: #fff;
-    padding: 0 20px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 5%;
     box-sizing: border-box;
 }
 
@@ -61,31 +65,32 @@ textarea  {
     width: 100%;
     border: 0;
     background: $border-color;
-    height: 50%;
-    min-height: 200px;
-    font-size: 16px;
+    height: auto;
+    min-height: auto;
+    min-width: 100%;
+    font-size: 150%;
     color: #fff;
-    padding: 20px;
+    padding-top: 2.5%;
+    padding-bottom: 50%;
+    padding-left: 5%;
     box-sizing: border-box;
 }
 
 .flat-button-send {
-    color: $bunhover-color;
-    font-size: 13px;
+    font-size: 100%;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 25%;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 2% 4%;
+    color: $bunhover-color;
     border: 1px solid $bunhover-color;
     animation: fadeIn 1s 0.6s backwards;
-    white-space: nowrap;
     float: right;
-    margin: 20px;
 
     &:hover {
         color: $background-color;
-        border: 0px;
+        border: 0 solid;
         background-color: $bunhover-color;
     }
 }

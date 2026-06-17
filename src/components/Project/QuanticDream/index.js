@@ -64,9 +64,9 @@ const QuanticDream = () => {
             
             <h2>Summary of Contributions</h2>
             <div className="container-list-button">
-                <p className='flat-button-project' onClick={() => { menuRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>MENUS</p>
-                <p className='flat-button-project' onClick={() => { perfRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>PERFORMANCES</p>
-                <p className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</p>
+                <button className='flat-button-project' onClick={() => { menuRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>Menus</button>
+                <button className='flat-button-project' onClick={() => { perfRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>Performances</button>
+                <button className='flat-button-project' onClick={() => { hudRef.current?.scrollIntoView({ behavior: 'smooth' }); }}>HUD</button>
             </div>
         </div>
 
@@ -81,87 +81,3 @@ const QuanticDream = () => {
 }
 
 export default QuanticDream
-
-
-/*
-
-
-        <div className='description'>
-            <h4>
-                Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                <br /><br />
-                The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                <br /><br />
-                Key contributions:<br />
-                * Storefront UI architecture<br />
-                * Steam overlay purchase integration<br />
-                * Virtual currency workflows<br />
-                * Live content support<br />
-                * Scalable shop category structure<br />
-                <br />
-                Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-            </h4>
-        </div>
-
-        <div className='description'>
-            <h4>
-                Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                <br /><br />
-                The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                <br /><br />
-                Key contributions:<br />
-                * Storefront UI architecture<br />
-                * Steam overlay purchase integration<br />
-                * Virtual currency workflows<br />
-                * Live content support<br />
-                * Scalable shop category structure<br />
-                <br />
-                Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-            </h4>
-        </div>
-
-        <div className='description'>
-            <h4>
-                Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                <br /><br />
-                The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                <br /><br />
-                Key contributions:<br />
-                * Storefront UI architecture<br />
-                * Steam overlay purchase integration<br />
-                * Virtual currency workflows<br />
-                * Live content support<br />
-                * Scalable shop category structure<br />
-                <br />
-                Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-            </h4>
-        </div>
-
-        <section id='section2'>
-            <div className='description'>
-                <h4>
-                    Designed and integrated an in-game storefront supporting cosmetic purchases, virtual currency transactions, and LiveOps content updates.
-                    The shop supported purchases using in-game currency (Elder Gold) as well as premium currency acquisition through the Steam overlay payment flow.
-                    <br /><br />
-                    The interface was structured to support scalable catalog updates and future monetization features without requiring major UI refactors.
-                    <br /><br />
-                    Key contributions:<br />
-                    * Storefront UI architecture<br />
-                    * Steam overlay purchase integration<br />
-                    * Virtual currency workflows<br />
-                    * Live content support<br />
-                    * Scalable shop category structure<br />
-                    <br />
-                    Result: Delivered a flexible monetization framework supporting ongoing content releases.
-
-                </h4>
-            </div>
-        </section>
-
-*/
