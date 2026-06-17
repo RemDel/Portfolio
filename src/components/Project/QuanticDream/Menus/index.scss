@@ -4,8 +4,7 @@
     //position: absolute;
     //text-align: center;
     width: 100%;
-    //border: 1px solid $test-color;
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 .container-horizontal {
@@ -17,18 +16,10 @@
     flex-direction: row;
     align-self: center;
     align-items: top;
-    //border: 1px solid $test-color-1;
 }
 
 .text-container {
     width: 25%;
-    //border: 1px solid $test-color;
-}
-
-.text-container-auto {
-    width: 350px;
-    margin: 1rem;
-    //border: 1px solid $test-color;
 }
 
 .small-div {
@@ -58,9 +49,7 @@ h2 {
 h3 {
     color: $secondary-color;
     font-weight: bold;
-    font-size: 20px;
     font-family: sans-serif;
-    letter-spacing: 3px;
 }
 
 h4 {

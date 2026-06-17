@@ -1,7 +1,7 @@
 @import "../variables.module.scss";
 
 .desc {
-    margin-top: 325px;
+    margin-top: 17%;
 
     .text-zone {
         position: relative;
@@ -11,7 +11,6 @@
         flex-direction: row;
         align-self: center;
         align-items: center;
-        //border: 1px solid $test-color;
 
         h1 {
             font-size: 500%;
@@ -19,25 +18,23 @@
             color: $primary-color;
             font-weight: 400;
             position: relative;
-            margin-bottom: 40px;
         }
 
         img {
-            height: 220px;
-            width: auto;
-            margin-right: 50px;
+            height: 12%;
+            width: 12%;
+            margin-right: 2.5%;
             border: 1px solid $secondary-color;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 0.5%;
+            border-radius: 2%;
         }
 
         .text-container {
-            //border: 1px solid $test-color;
             width: 50%;
         }
 
         p {
-            font-size: 14px;
+            font-size: 140%;
             color: $primary-color;
             font-family: sans-serif;
             font-weight: 300;
@@ -45,27 +42,26 @@
         }
 
         ul {
-            line-height: 3px;
+            line-height: 30%;
             color: $primary-color;
         }
 
         b {
-            font-size: 14px;
+            font-size: 100%;
             font-weight: bold;
         }
 
         a {
             text-decoration: none;
-            font-size: 14px;
+            font-size: 100%;
             color: $tertiary-color;
             font-family: sans-serif;
             text-align: left;
         }
 
         h3 {
-            margin-top: 20px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 160%;
             color: $primary-color;
             font-family: sans-serif;
             text-align: left;
