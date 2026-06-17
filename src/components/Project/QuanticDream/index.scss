@@ -99,6 +99,7 @@ a {
 
 .flat-button-project {
     color: $bunhover-color;
+    background-color: $background-color;
     font-size: 125%;
     font-weight: 400;
     letter-spacing: 30%;
@@ -111,6 +112,7 @@ a {
     padding-left: 0.75%;
     padding-right: 0.75%;
     margin: 1.5%;
+    border: 1px solid $bunhover-color;
     cursor: pointer;
 
     &:hover {
